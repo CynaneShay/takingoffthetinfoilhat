@@ -14,9 +14,12 @@
 
         <style>
             body {padding: 0; margin: 0;}
-            .headertext {font-family: "Raleway", sans-serif; font-size: 68px;
-                        font-variant: small-caps; font-weight: 100; 
-                        position: absolute; top: 36%; text-align: center; width: 100%; letter-spacing: 5px;}
+            .header {position: relative; display: inline-block; border: 0; margin: 0; padding: 0;}
+                .headertext {vertical-align:bottom;}
+                .title {font-family: "Raleway", sans-serif; font-size: 68px;
+                            font-variant: small-caps; font-weight: 100; 
+                            position: absolute; top: 36%; text-align: center; width: 100%; letter-spacing: 5px;}
+                .inprog {font-size: 16px; font-variant: small-caps; font-weight: 600;}
             .subtitle {width: 100%; text-align: center; font-family: "Raleway", sans-serif; font-size: 22px; font-weight: 600; 
                         padding: 0; margin:0; font-variant: small-caps;}
             .menu { display: flex; display-direction: row; justify-content: center; align-items: center; 
@@ -43,11 +46,13 @@
     </head>
 
     <body>
-        <img src="WebsiteHeader.resize.jpg" style="width:100%; margin=0">
-
-        <div class="headertext">
-            <p class="title">Taking Off the Tinfoil Hat</p>
-            <p style="font-size: 16px; font-variant: small-caps; font-weight: 600;">Book in Progress</p>          
+        
+        <div class="header">
+            <img src="WebsiteHeader.resize.jpg" style="width:100%; display: block;">
+            <div class="headertext">
+                <p class="title">Taking Off the Tinfoil Hat</p>
+                <p class="inprog">Book in Progress</p>          
+            </div>
         </div>
         
         <div class="subtitle">
