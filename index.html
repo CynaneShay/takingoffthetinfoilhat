@@ -35,10 +35,36 @@
                            padding: 50px; margin:0; font-variant: small-caps; width: 25%;}
                 .bodytext {background-color: rgba(255, 255, 255, 0.7); font-family: "Raleway", sans-serif; font-size: 16px; text-align: left; margin: 0; padding: 50px; 
                             border: 0; width: 45%; font-weight: 300;}
-            .quotescroll {posititon: relative;}
-                #qone {animation: fade 3s infinite 0s;}
-                #qtwo {animation: fade 3s infinite 1.5s;}
-                @keyframes fade{0% {opacity: 1;}, 50% {opacity: 0;} 100% {opacity: 1;}}
+                @-webkit-keyframes fade-in{
+                    from{
+                        opacity:1;
+                        top:0px;
+                    }
+                    to{
+                        opacity:0;
+                        top:-5px;
+                    }
+                    }
+                    .text-animated-one{
+                    display:inline;
+                    position:relative;
+                    top:0px;
+                    -webkit-animation:fade-in 1s infinite;
+
+                    }
+                    .text-animated-two{
+                    opacity:0;
+                    display:inline;
+                    position:relative;
+                    margin-left:-56px;
+                    -webkit-animation:fade-in 1s infinite;
+                    -webkit-animation-delay:0.5s;
+                    }
+               .quotescroll{
+                    display:inline;
+                    width:100px;
+                    height:100px;
+                    }
             .footer {position: relative; display: inline-block; border: 0; margin: 0; padding: 0;}
                 .headshot img {border-radius: 50%; height: 130px; position: absolute; top: 50%; -ms-transform: translatey(-50%); 
                                 transform: translatey(-50%); left: 10%; box-shadow: 2px 2px 10px white;}
@@ -107,8 +133,8 @@
         </div>
     
         <div class="quotescroll">
-            <p id="qone">quote1</p>
-            <p id="qtwo">quote2</p>
+            <p class="text-animated-one">quote1</p>
+            <p class="text-animated-one">quote2</p>
         </div>
 
         <div class="footer">
