@@ -37,11 +37,12 @@
                             border: 0; width: 45%; font-weight: 300;}
             .quotescroll{width:100%; text-align: center; font-family: "Raleway", sans-serif; font-size: 22px; height: 100px; background-color: #91b1cc; color: white;
                             position: relative; display: inline-block; margin: 0; padding: 0; border: 0;}                  
-                @keyframes fadeone {0% {opacity: 1;} 48% {opacity: 1;} 49% {opacity: 0;} 99% {opacity: 0;} 100% {opacity: 1;}}
-                @keyframes fadetwo {0% {opacity: 0;} 49% {opacity: 0;} 50% {opacity: 1;} 99% {opacity: 1;} 100% {opacity: 0;}}
-                .qone {animation-name: fadeone; animation-duration: 20s; animation-iteration-count: infinite; width: 70%; left: 15%;  
+                @keyframes fade {0% {opacity: 1;} 32% {opacity: 1;} 33% {opacity: 0;} 100% {opacity: 0;}}
+                .qone {animation-name: fade; animation-duration: 30s; animation-iteration-count: infinite; width: 70%; left: 15%;  
                         position: absolute; top: 50%; -ms-transform: translatey(-50%); transform: translatey(-50%);}
-                .qtwo {animation-name: fadetwo; animation-duration: 20s; animation-iteration-count: infinite; width: 70%; left: 15%;
+                .qtwo {animation-name: fade; animation-duration: 30s; animation-iteration-count: infinite; animation-delay: 10s; width: 70%; left: 15%;
+                        position: absolute; top: 50%; -ms-transform: translatey(-50%); transform: translatey(-50%);}
+                .qthree {animation-name: fade; animation-duration: 30s; animation-iteration-count: infinite; animation-delay: 20s; width: 70%; left: 15%;
                         position: absolute; top: 50%; -ms-transform: translatey(-50%); transform: translatey(-50%);}
             .reviews {width: 100%; text-align: center; font-family: "Raleway", sans-serif; font-size: 16px; 
                         position: relative; display: inline-block; margin: 0; padding: 50px; border: 0;}
@@ -119,6 +120,7 @@
             <div class="qone"><i>"You have learnt something. That always feels at first as if you had lost something."</i><br> -George Bernard Shaw</div>
             <div class="qtwo"><i>“We are not to simply bandage the wounds of victims beneath the wheels of injustice, we are to drive a spoke into the wheel itself.”
                 </i><br>-Dietrich Bonhoeffer</div>
+            <div class="qthree"><i>"Those who can make you believe absurdities, can make you commit atrocities."</i><br> -Voltaire</div>
         </div>
 
         <div class="reviews">
