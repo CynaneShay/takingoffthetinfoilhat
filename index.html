@@ -14,10 +14,10 @@
 
         <style>
             body {padding: 0; margin: 0;}
-            .header {position: relative; display: block; border: 0; margin: 0; padding: 0;}
-                .header img {width:100%; display: block; margin: 0; padding: 0; border: 0;}
+            .header {position: relative; display: block; border: 0; margin: 0; padding: 0; overflow: hidden}
+                .header img {width:100%; display: block; margin: 0 auto; padding: 0; border: 0;}
                 .headertext {position: absolute; bottom: 2px; text-align: center; width: 100%; border: 0; margin: 0; padding: 0;}
-                    .title {font-family: "Raleway", sans-serif; font-size: 6.0vw; font-variant: small-caps; font-weight: 100; letter-spacing: 5px;
+                    .title {font-family: "Raleway", sans-serif; font-size: 5.9vw; font-variant: small-caps; font-weight: 100; letter-spacing: 5px;
                         border: 0; margin: 0; padding: 0;}
                     .inprog {font-family: "Raleway", sans-serif; font-size: 1.4vw; font-variant: small-caps; font-weight: 600; border: 0; margin: 0; padding: 0;}
             .menu { display: flex; flex-direction: row; justify-content: center; align-items: center; 
@@ -35,8 +35,8 @@
                            padding: 4.5vw; margin:0; font-variant: small-caps; width: 25%;}
                 .bodytext {background-color: rgba(255, 255, 255, 0.7); font-family: "Raleway", sans-serif; font-size: 1.4vw; text-align: left; margin: 0; padding: 50px; 
                             border: 0; width: 45%; font-weight: 300;}
-            .quotescroll{width:100%; text-align: center; font-family: "Raleway", sans-serif; font-size: 1.6vw; height: 9vw; background-color: #91b1cc; color: white;
-                            position: relative; display: inline-block; margin: 0; padding: 0; border: 0;}                  
+            .quotescroll{width:100%; text-align: center; font-family: "Raleway", sans-serif; font-size: 1.6vw; background-color: #91b1cc; color: white;
+                            position: relative; display: inline-block; margin: 0; padding: 9vw; border: 0;}                  
                 @keyframes fade {0% {opacity: 1;} 32% {opacity: 1;} 33% {opacity: 0;} 100% {opacity: 0;}}
                 .qone {animation-name: fade; animation-duration: 30s; animation-iteration-count: infinite; width: 70%; left: 15%;  
                         position: absolute; top: 50%; -ms-transform: translatey(-50%); transform: translatey(-50%);}
@@ -67,6 +67,16 @@
                                   background: -webkit-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%);
                                   background: linear-gradient(to bottom, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); -webkit-background-clip: text;
                                   -moz-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; vertical-align: middle;}
+        @media only screen and (max-width: 800px) {
+            .header img {width: 200%; display: block; margin: 0 auto; padding: 0; border: 0;}
+            .title {font-family: "Raleway", sans-serif; font-size: 5.5vw; font-variant: small-caps; font-weight: 100; letter-spacing: 5px;
+                        border: 0; margin: 0; padding: 0;}}
+            .main {display: flex; background: #FFFDEF; width: 100%; flex-direction: column; justify-content: center; align-items: center;
+                    margin: 0; padding: 4.5vw 0; border: 0;}
+            .bodytext {background-color: rgba(255, 255, 255, 0.7); font-family: "Raleway", sans-serif; font-size: 3.0vw; text-align: left; margin: 0; padding: 50px; 
+                border: 0; width: 45%; font-weight: 300;}
+            .quotescroll{width:100%; text-align: center; font-family: "Raleway", sans-serif; font-size: 3.0vw; background-color: #91b1cc; color: white;
+                            position: relative; display: inline-block; margin: 0; padding: 9vw; border: 0;}
         </style>
     </head>
 
@@ -132,7 +142,7 @@
             <div class="rev">
                 <div class="revtext"><i>"Review"</i><br></div>
                 <div class="revname">&emsp; &emsp; &emsp; -Laci Bean, 
-                    <span style="font-size: 1.1vw;">Trauma Recovery Coach, Deconstuction Influencer (<a href="https://www.tiktok.com/@laci_bean?lang=en" target="_blank">@Laci_Bean</a>)</span>
+                    <span class="creds" style="font-size: 1.1vw;">Trauma Recovery Coach, Deconstuction Influencer (<a href="https://www.tiktok.com/@laci_bean?lang=en" target="_blank">@Laci_Bean</a>)</span>
                 </div>
             </div>
             <p></p>
