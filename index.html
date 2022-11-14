@@ -39,18 +39,18 @@
                             position: relative; display: block; margin: 8vw 0 8vw 0; padding: 8vw 0 8vw 0; border: 0;}                  
                 @keyframes fade {0% {opacity: 1;} 32% {opacity: 1;} 33% {opacity: 0;} 100% {opacity: 0;}}
                 .qone {animation-name: fade; animation-duration: 30s; animation-iteration-count: infinite; width: 70%; 
-                        position: absolute; left: 50%; transform: translateX(-50%); top: 0;}
+                        position: absolute; left: 50%; transform: translateX(-50%), translatey(-50%); top: 50%; }
                 .qtwo {opacity: 0; animation-name: fade; animation-duration: 30s; animation-iteration-count: infinite; animation-delay: 10s; width: 70%; 
-                        position: absolute; left: 50%; transform: translateX(-50%); top: 0;}
+                        position: absolute; left: 50%; transform: translateX(-50%), translatey(-50%); top: 50%;}
                 .qthree {opacity: 0; animation-name: fade; animation-duration: 30s; animation-iteration-count: infinite; animation-delay: 20s; width: 70%; 
-                        position: absolute; left: 50%; transform: translateX(-50%); top: 0;}
+                        position: absolute; left: 50%; transform: translateX(-50%), translatey(-50%); top: 50%;}
             .reviews {width: 100%; font-family: "Raleway", sans-serif; font-size: 1.4vw; 
                         display: flex; flex-direction: column; align-items: center;
                          margin: 0; padding: 2vw 0 4vw 0; border: 0;}
                 .hype {width: 60%; font-size: 1.8vw; text-align: left; font-variant: small-caps; border: 0; margin: 0; padding: 2vw;}
                 .rev {width: 60%; background-color: rgba(145, 177, 204, 0.1); padding: 1vw; margin: 0; border: 0;}
                     .revtext {}
-                    .revname {position:absolute; width:: 80%; left: 10%;}
+                    .revname {width:: 80%; transform: translateX(10%);}
             .footer {position: relative; display: flex; justify-content: center; align-items: center; border: 0; margin: 0; padding: 0; overflow: hidden}
                 .footerimg {width: 100%;}                
                 .footerflex {display: flex; position: absolute; justify-content: center; align-items: center; border: 0; margin: 0; padding: 0; overflow: hidden}
