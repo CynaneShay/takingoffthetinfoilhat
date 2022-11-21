@@ -1,7 +1,3 @@
-layout: page
-title: "Contact"
-permalink: /contact
-
 <!doctype html>
 
 <html>
