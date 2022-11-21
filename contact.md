@@ -15,7 +15,7 @@
                         outline: none; background-color: rgba(255, 255, 255, 0.4); color: grey; 
                     padding: 1vw 1.2vw .8vw 1.2vw; border-radius: 10px; font-size: 2.5vw;}
 
-            body {padding: 0; margin: 0;}
+            body {padding: 0; margin: 0; border: 0;}
             .header {position: relative; display: block; border: 0; margin: 0; padding: 0; overflow: hidden}
                 .header img {width:100%; display: block; margin: 0 auto; padding: 0; border: 0;}
                 .headertext {position: absolute; bottom: 2px; text-align: center; width: 100%; border: 0; margin: 0; padding: 0;}
