@@ -11,7 +11,8 @@
         <title>Taking Off the Tinfoil Hat</title>
 
         <style>
-            #myBtn {display: none; position: fixed; font-family: "Raleway", sans-serif; bottom: 4vw; right: 2vw; z-index: 99; border: none; outline: none; background-color: rgba(255, 255, 255, 0.4); color: grey; 
+            #myBtn {display: none; position: fixed; font-family: "Raleway", sans-serif; bottom: 4vw; right: 2vw; z-index: 99; border: none; 
+                        outline: none; background-color: rgba(255, 255, 255, 0.4); color: grey; 
                     padding: 1vw 1.2vw .8vw 1.2vw; border-radius: 10px; font-size: 2.5vw;}
 
             body {padding: 0; margin: 0;}
@@ -35,8 +36,8 @@
                     margin: 0; padding: 4.5vw 0; border: 0;}
                 .subtitle {text-align: center; font-family: "Raleway", sans-serif; font-size: 3.2vw; font-weight: 600; 
                            padding: 1vw; margin:0; font-variant: small-caps; width: 25%;}
-                .bodytext {background-color: rgba(255, 255, 255, 0.7); font-family: "Raleway", sans-serif; font-size: 1.4vw; text-align: left; margin: 0; padding: 50px; 
-                            border: 0; width: 45%; font-weight: 300;}
+                .bodytext {background-color: rgba(255, 255, 255, 0.7); font-family: "Raleway", sans-serif; font-size: 1.4vw; text-align: left; 
+                            margin: 0; padding: 50px; border: 0; width: 45%; font-weight: 300;}
                     .headshot {text-align: center;}
                         .headshot img {border-radius: 50%; height: 11.7vw; box-shadow: 2px 2px 10px white; margin: 0 9.5vw;}
                     .info {display: flex; flex-direction: row; justify-content: center; align-items: center;}
@@ -46,7 +47,8 @@
                             .fa-instagram { background: -moz-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); 
                                           background: -webkit-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%);
                                           background: linear-gradient(to bottom, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); -webkit-background-clip: text;
-                                          -moz-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; border-radius: 10%; vertical-align: middle;}
+                                          -moz-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; border-radius: 10%; 
+                                            vertical-align: middle;}
                             .fa-envelope { background: -moz-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); 
                                           background: -webkit-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%);
                                           background: linear-gradient(to bottom, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); -webkit-background-clip: text;
@@ -63,7 +65,8 @@
                                 text-shadow: -1px -1px 0 #a3a3a3, 1px -1px 0 #a3a3a3, -1px 1px 0 #a3a3a3, 1px 1px 0 #a3a3a3, 2px 2px 10px white; line-height: 1.5;}
         
         @media only screen and (max-width: 800px) {
-            #myBtn {display: none; position: fixed; font-family: "Raleway", sans-serif; bottom: 4vw; right: 2vw; z-index: 99; border: none; outline: none; background-color: rgba(255, 255, 255, 0.4); color: grey; 
+            #myBtn {display: none; position: fixed; font-family: "Raleway", sans-serif; bottom: 4vw; right: 2vw; z-index: 99; border: none; 
+                    outline: none; background-color: rgba(255, 255, 255, 0.4); color: grey; 
                     padding: 1vw 1.2vw; border-radius: 10px; font-size: 4vw;}
             .header {position: relative; display: block; border: 0; margin: 0; padding: 0; overflow: hidden}
                 .header img {width:200%; display: block; margin: 0; padding: 0; border: 0; transform: translatex(-25%);}
@@ -71,7 +74,8 @@
                         border: 0; margin: 0; padding: 0;}
                 .inprog {font-family: "Raleway", sans-serif; font-size: 1.7vw; font-variant: small-caps; font-weight: 600; border: 0; margin: 0; padding: 0;}
             .menu { display: flex; flex-direction: row; justify-content: center; align-items: center; 
-                    width: 100%; font-weight: bold; font-family: "Raleway", sans-serif; font-size: 2.7vw; text-shadow: 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000;;
+                    width: 100%; font-weight: bold; font-family: "Raleway", sans-serif; font-size: 2.7vw; 
+                    text-shadow: 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000;
                     height: 4.8vw; color: black; background: linear-gradient(to bottom, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%);
                     margin: 0; padding: 0; border: 0; font-variant: small-caps;}
                 .centermenu {display: flex; width: 70%; justify-content: space-around; border: 0; margin: 0; padding: 0;}
@@ -83,7 +87,8 @@
                     margin: 0; padding: 4.5vw 0; border: 0;}
                 .subtitle {text-align: center; font-family: "Raleway", sans-serif; font-size: 3.4vw; font-weight: bold; 
                            padding: 4.5vw; margin:0; font-variant: small-caps; width: 70%;}
-                .bodytext {background-color: rgba(255, 255, 255, 0.7); font-family: "Raleway", sans-serif; font-size: 3.0vw; text-align: left; margin: 0; padding: 4.5vw; 
+                .bodytext {background-color: rgba(255, 255, 255, 0.7); font-family: "Raleway", sans-serif; font-size: 3.0vw; 
+                            text-align: left; margin: 0; padding: 4.5vw; 
                     border: 0; width: 70%; font-weight: 300;}
                 .headshot img {border-radius: 50%; height: 22vw; box-shadow: 2px 2px 10px white; border: 0; margin: 0; padding: 0;}
                 .info {display: flex; flex-direction: row; justify-content: center; align-items: center;}
@@ -140,10 +145,10 @@
                   <div class="headshot"><img src="Headshot1.jpg"><br>Author</div>
                   <div class="contacts">
                       <p class="socials">
-                              <a href="https://www.instagram.com/taking.off.the.tinfoil.hat/" target="_blank" class="fa fa-instagram"></a> @taking.off.the.tinfoil.hat</p>
+                              <a href="https://www.instagram.com/taking.off.the.tinfoil.hat/" target="_blank" 
+                                 class="fa fa-instagram"></a> @taking.off.the.tinfoil.hat</p>
                       <p class="socials">
-                              <a href="mailto: takingoffthetinfoilhat@gmail.com" target="_blank" class="fa fa-envelope"></a> takingoffthetinfoilhat@gmail.com</p>              </div>
-                  </div>
+                              <a href="mailto: takingoffthetinfoilhat@gmail.com" target="_blank" class="fa fa-envelope"></a> takingoffthetinfoilhat@gmail.com</p>                     </div>
               </div>     
         
               <div class="info">
