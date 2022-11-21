@@ -1,0 +1,189 @@
+layout: page
+title: "Contact"
+permalink: /contact
+
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" 
+            href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Share+Tech+Mono" />
+
+        <title>Taking Off the Tinfoil Hat</title>
+
+        <style>
+            #myBtn {display: none; position: fixed; font-family: "Raleway", sans-serif; bottom: 4vw; right: 2vw; z-index: 99; border: none; outline: none; background-color: rgba(255, 255, 255, 0.4); color: grey; 
+                    padding: 1vw 1.2vw .8vw 1.2vw; border-radius: 10px; font-size: 2.5vw;}
+
+            body {padding: 0; margin: 0;}
+            .header {position: relative; display: block; border: 0; margin: 0; padding: 0; overflow: hidden}
+                .header img {width:100%; display: block; margin: 0 auto; padding: 0; border: 0;}
+                .headertext {position: absolute; bottom: 2px; text-align: center; width: 100%; border: 0; margin: 0; padding: 0;}
+                    .title {font-family: "Raleway", sans-serif; font-size: 5.9vw; font-variant: small-caps; font-weight: 100; letter-spacing: 5px;
+                        border: 0; margin: 0; padding: 0;}
+                    .inprog {font-family: "Raleway", sans-serif; font-size: 1.4vw; font-variant: small-caps; font-weight: 600; border: 0; margin: 0; padding: 0;}
+            .menu { display: flex; flex-direction: row; justify-content: center; align-items: center; 
+                    width: 100%; color: white; font-weight: 600; font-family: "Raleway", sans-serif; font-size: 2.3vw;
+                    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; height: 4.4vw; letter-spacing: 2px;
+                    background: linear-gradient(to bottom, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%);
+                    margin: 0; padding: 0; border: 0; font-variant: small-caps;}
+                .centermenu {display: flex; width: 50%; justify-content: space-around; border: 0; margin: 0; padding: 0;}
+                    .home {border: 0; margin: 0; padding: 0;}
+                    .about {border: 0; margin: 0; padding: 0;}
+                    .contact {border: 0; margin: 0; padding: 0;}
+                    .resources {border: 0; margin: 0; padding: 0;}
+            .main {display: flex; background: #FFFDEF; width: 100%; flex-direction: column; justify-content: center; align-items: center;
+                    margin: 0; padding: 4.5vw 0; border: 0;}
+                .subtitle {text-align: center; font-family: "Raleway", sans-serif; font-size: 3.2vw; font-weight: 600; 
+                           padding: 1vw; margin:0; font-variant: small-caps; width: 25%;}
+                .bodytext {background-color: rgba(255, 255, 255, 0.7); font-family: "Raleway", sans-serif; font-size: 1.4vw; text-align: left; margin: 0; padding: 50px; 
+                            border: 0; width: 45%; font-weight: 300;}
+                    .headshot {text-align: center;}
+                        .headshot img {border-radius: 50%; height: 11.7vw; box-shadow: 2px 2px 10px white; margin: 0 9.5vw;}
+                    .info {display: flex; flex-direction: row; justify-content: center; align-items: center;}
+                        .contacts {font-family: "Share Tech Mono", sans-serif; font-size: 1.5vw; text-align: left; margin: 0vw 4.5vw;}
+                            .socials {background-color: rgba(255, 255, 255, 0.5); padding: 0.5vw 1.8vw 0.5vw; border-radius: 25px;}
+                            .fa { padding: 0; font-size: 4.0vw; width: 4.5vw; text-align: center; text-decoration: none;}
+                            .fa-instagram { background: -moz-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); 
+                                          background: -webkit-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%);
+                                          background: linear-gradient(to bottom, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); -webkit-background-clip: text;
+                                          -moz-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; border-radius: 10%; vertical-align: middle;}
+                            .fa-envelope { background: -moz-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); 
+                                          background: -webkit-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%);
+                                          background: linear-gradient(to bottom, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); -webkit-background-clip: text;
+                                          -moz-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; vertical-align: middle;}
+                            .fa-globe { background: -moz-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); 
+                                          background: -webkit-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%);
+                                          background: linear-gradient(to bottom, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); -webkit-background-clip: text;
+                                          -moz-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; vertical-align: middle;}
+            .footer {position: relative; display: flex; justify-content: space-around; align-items: center; border: 0; margin: 0; padding: 0; overflow: hidden}
+                .footerimg {width: 100%;}                
+                .footerflex {display: flex; position: absolute; justify-content: center; align-items: center; border: 0; margin: 0; padding: 0; overflow: hidden}
+                .footertext {font-family: "Raleway", sans-serif; font-size: 2.5vw; font-variant: small-caps; text-align: center; color: white; 
+                                border: 0; margin: 0vw 4.0vw; padding: 0; 
+                                text-shadow: -1px -1px 0 #a3a3a3, 1px -1px 0 #a3a3a3, -1px 1px 0 #a3a3a3, 1px 1px 0 #a3a3a3, 2px 2px 10px white; line-height: 1.5;}
+        
+        @media only screen and (max-width: 800px) {
+            #myBtn {display: none; position: fixed; font-family: "Raleway", sans-serif; bottom: 4vw; right: 2vw; z-index: 99; border: none; outline: none; background-color: rgba(255, 255, 255, 0.4); color: grey; 
+                    padding: 1vw 1.2vw; border-radius: 10px; font-size: 4vw;}
+            .header {position: relative; display: block; border: 0; margin: 0; padding: 0; overflow: hidden}
+                .header img {width:200%; display: block; margin: 0; padding: 0; border: 0; transform: translatex(-25%);}
+                .title {font-family: "Raleway", sans-serif; font-size: 5.5vw; font-variant: small-caps; font-weight: 100; letter-spacing: 5px;
+                        border: 0; margin: 0; padding: 0;}
+                .inprog {font-family: "Raleway", sans-serif; font-size: 1.7vw; font-variant: small-caps; font-weight: 600; border: 0; margin: 0; padding: 0;}
+            .menu { display: flex; flex-direction: row; justify-content: center; align-items: center; 
+                    width: 100%; font-weight: bold; font-family: "Raleway", sans-serif; font-size: 2.7vw; text-shadow: 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000;;
+                    height: 4.8vw; color: black; background: linear-gradient(to bottom, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%);
+                    margin: 0; padding: 0; border: 0; font-variant: small-caps;}
+                .centermenu {display: flex; width: 70%; justify-content: space-around; border: 0; margin: 0; padding: 0;}
+                    .home {border: 0; margin: 0; padding: 0;}
+                    .about  {border: 0; margin: 0; padding: 0;}
+                    .contact {border: 0; margin: 0; padding: 0;}
+                    .resources {border: 0; margin: 0; padding: 0;}
+            .main {display: flex; background: #FFFDEF; width: 100%; flex-direction: column; justify-content: center; align-items: center;
+                    margin: 0; padding: 4.5vw 0; border: 0;}
+                .subtitle {text-align: center; font-family: "Raleway", sans-serif; font-size: 3.4vw; font-weight: bold; 
+                           padding: 4.5vw; margin:0; font-variant: small-caps; width: 70%;}
+                .bodytext {background-color: rgba(255, 255, 255, 0.7); font-family: "Raleway", sans-serif; font-size: 3.0vw; text-align: left; margin: 0; padding: 4.5vw; 
+                    border: 0; width: 70%; font-weight: 300;}
+                .headshot img {border-radius: 50%; height: 22vw; box-shadow: 2px 2px 10px white; border: 0; margin: 0; padding: 0;}
+                .info {display: flex; flex-direction: row; justify-content: center; align-items: center;}
+                    .contacts {font-family: "Share Tech Mono", sans-serif; font-size: 2.0vw; text-align: center; margin: 0; border: 0; }
+                        .socials {background-color: rgba(255, 255, 255, 0.5); padding: 2vw 1.8vw 2vw; border-radius: 25px;}
+                    .fa { padding: 0; font-size: 10.0vw; width: 25vw; text-align: center; text-decoration: none;}            
+            .footerimg {width: 350%; text-align: center;}
+            .footerflex {display: flex; position: absolute; justify-content: space-around; align-items: center; border: 0; margin: 0; padding: 0; overflow: hidden}
+                .footertext {width: 25vw; font-family: "Raleway", sans-serif; font-size: 3.0vw; font-variant: small-caps; text-align: center; color: white; 
+                    border: 0; margin: 0; padding: 0; font-weight: bold; 
+                    text-shadow: -.1vw -.1vw 0 black, .1vw -.1vw 0 black, -.1vw .1vw 0 black, .1vw .1vw 0 black, .2vw .2vw 1vw white;}
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+        
+        <div class="header">
+            <img src="WebsiteHeader.resize.jpg">
+            <div class="headertext">
+                <p class="title">Taking Off the Tinfoil Hat</p>
+                <p class="inprog">Book in Progress</p>          
+            </div>
+        </div>
+      
+        <div class="menu">
+            <div class="centermenu"> 
+                <div class="home">Home</div>
+                <div class="about">About</div>
+                <div class="contact">Contact</div>
+                <div class="resources">Resources</div>
+            </div>
+        </div>
+        
+        <div class="main">
+            
+            <div class="subtitle">
+                <p><strong>Contact</strong></p>  
+            </div>       
+            
+         <div class="bodytext">
+                <p style="text-align: center;">
+                 <strong>Reach Out!</strong><br>
+                <br>
+                Still open to publishing enquiries.
+                Seeking podcast interviews and marketing opportunities.<br>
+                <br>
+                </p>
+
+            
+              <div class="info">
+                  <div class="headshot"><img src="Headshot1.jpg"><br>Author</div>
+                  <div class="contacts">
+                      <p class="socials">
+                              <a href="https://www.instagram.com/taking.off.the.tinfoil.hat/" target="_blank" class="fa fa-instagram"></a> @taking.off.the.tinfoil.hat</p>
+                      <p class="socials">
+                              <a href="mailto: takingoffthetinfoilhat@gmail.com" target="_blank" class="fa fa-envelope"></a> takingoffthetinfoilhat@gmail.com</p>              </div>
+                  </div>
+              </div>     
+        
+              <div class="info">
+                  <div class="headshot"><img src="Gerus.headshot.jpg"><br>Agent: Claire Gerus</div>
+                  <div class="contacts">
+                      <p class="socials">
+                              <a href="http://www.publishersmarketplace.com/members/Clairus" target="_blank" class="fa fa-globe"></a>Publishers Marketplace</p>
+                      <p class="socials">
+                              <a href="mailto: takingoffthetinfoilhat@gmail.com" target="_blank" class="fa fa-envelope"></a>Gerus.Claire@gmail.com</p>
+                  </div>                
+              </div>
+            </div>        
+            
+        </div>
+        
+    
+        <div class="footer">
+            <img class="footerimg" src="WebsiteFooter.clouds.jpg" >
+            <div class="footerflex">              
+                <div class="footertext">
+                    Reach Out<BR>Get in Touch<br>Connect
+                </div>
+                <div class="contacts">
+                    <a href="https://www.instagram.com/taking.off.the.tinfoil.hat/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="mailto: takingoffthetinfoilhat@gmail.com" target="_blank" class="fa fa-envelope"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load external JavaScript -->
+            <script src="scripts.js"></script>
+        <!-- .fa:hover {opacity: 0.9; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);} -->
+        
+        
+    </body>
+
+</html>
