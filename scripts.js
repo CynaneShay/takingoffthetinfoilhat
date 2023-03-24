@@ -22,11 +22,11 @@ function bubbleup(x) {
 
 function bubbledown(x) {
   //x.style.background="rgba(255,255,255,1)"; x.style.color="rgba(0,0,0,1)";
-  x.style.borderColor="white";
+  x.style.borderImage="linear-gradient(to top right, #FFFFFF 0%, #FFFFFF 100%) 30";
 }  
   
 function makebig(x) {
- x.style.fontSize="1.7vw"; 
+ x.style.fontSize="1.6vw"; 
 }
 
 function makelittle(x) {
