@@ -21,4 +21,12 @@ function bubbleup(x) {
 
 function bubbledown(x) {
   x.style.background="rgba(255,255,255,1)"; x.style.color="rgba(0,0,0,1)";
+}  
+  
+function makebig(x) {
+ x.style.font-size="4.2vw"; 
+}
+
+function makelittle(x) {
+   x.style.font-size="4.0vw"; 
 }
