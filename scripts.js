@@ -16,11 +16,13 @@ function topFunction() {
 }
 
 function bubbleup(x) {
-  x.style.background="rgba(145,177,204)"; x.style.color="rgba(255,255,255,1)"; x.style.borderImage="linear-gradient(to bottom, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%) 30";
+  //x.style.background="rgba(145,177,204)"; x.style.color="rgba(255,255,255,1)"; 
+  x.style.borderImage="linear-gradient(to top right, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%) 30";
 }
 
 function bubbledown(x) {
-  x.style.background="rgba(255,255,255,1)"; x.style.color="rgba(0,0,0,1)";
+  //x.style.background="rgba(255,255,255,1)"; x.style.color="rgba(0,0,0,1)";
+  x.style.borderColor="white";
 }  
   
 function makebig(x) {
