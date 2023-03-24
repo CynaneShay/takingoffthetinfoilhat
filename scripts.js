@@ -23,10 +23,10 @@ function bubbledown(x) {
   x.style.background="rgba(255,255,255,1)"; x.style.color="rgba(0,0,0,1)";
 }
 
-function big(x) {
+function MakeBig(x) {
  x.style.font-size="4.2vw"; 
 }
 
-function little(x) {
+function MakeLittle(x) {
    x.style.font-size="4.0vw"; 
 }
