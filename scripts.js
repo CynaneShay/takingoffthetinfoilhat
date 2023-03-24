@@ -16,7 +16,7 @@ function topFunction() {
 }
 
 function bubbleup(x) {
-  x.style.background-color="#91b1cc"; x.style.color="white";
+  x.style.background="rgba(145,177,204)"; x.style.color="white";
 }
 
 function bubbledown(x) {
