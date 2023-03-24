@@ -20,5 +20,5 @@ function bubbleup(x) {
 }
 
 function bubbledown(x) {
-  x.style.background="(255,255,255,0.1)"; x.style.color="black";
+  x.style.background="rgba(255,255,255,1)"; x.style.color="black";
 }
