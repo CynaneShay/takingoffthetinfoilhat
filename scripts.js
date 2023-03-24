@@ -16,9 +16,9 @@ function topFunction() {
 }
 
 function bubbleup(x) {
-  x.style.padding="1.1vw";
+  x.style.width="105%";
 }
 
 function bubbledown(x) {
-  x.style.padding="1vw";
+  x.style.width="100%";
 }
