@@ -16,7 +16,7 @@ function topFunction() {
 }
 
 function bubbleup(x) {
-  x.style.background="rgba(145,177,204)"; x.style.color="rgba(255,255,255,1)"; x.style.borderimage="linear-gradient(to bottom, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%) 30";
+  x.style.background="rgba(145,177,204)"; x.style.color="rgba(255,255,255,1)"; x.style.borderImage="linear-gradient(to bottom, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%) 30";
 }
 
 function bubbledown(x) {
@@ -24,9 +24,9 @@ function bubbledown(x) {
 }  
   
 function makebig(x) {
- x.style.fontsize="4.2vw"; 
+ x.style.fontSize="4.2vw"; 
 }
 
 function makelittle(x) {
-   x.style.fontsize="4.0vw"; 
+   x.style.fontSize="4.0vw"; 
 }
