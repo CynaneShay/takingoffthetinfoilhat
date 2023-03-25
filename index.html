@@ -59,6 +59,9 @@
                     .revtext {line-height: 1.5;}
                     .revname {width: 80%; transform: translateX(10%); line-height: 1.5;}
                     .creds {font-size: 1.1vw; }
+            .banner {position: relative; display: flex; justify-content: center; align-items: center; border: 0; margin: 0; padding: 0; overflow: hidden}    
+                .bannerimg {width: 100%;} 
+                .bannerflex {display: flex; position: absolute; justify-content: center; align-items: center; border: 0; margin: 0; padding: 0; overflow: hidden}
             .podcasts {width: 100%; font-family: "Raleway", sans-serif; font-size: 1.4vw; display: flex; flex-direction: column; align-items: center;
                          margin: 0; padding: 2vw 0 4vw 0; border: 0;}
                 .podlink {text-decoration: none; color: black; width: 60%; padding: 1vw; background-color: rgba(145, 177, 204, 0.1)}                
@@ -80,6 +83,10 @@
                                   background: linear-gradient(to bottom, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); -webkit-background-clip: text;
                                   -moz-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; border-radius: 10%; vertical-align: middle;}
                     .fa-envelope { background: -moz-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); 
+                                  background: -webkit-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%);
+                                  background: linear-gradient(to bottom, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); -webkit-background-clip: text;
+                                  -moz-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; vertical-align: middle;}
+                    .fa-tiktok { background: -moz-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); 
                                   background: -webkit-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%);
                                   background: linear-gradient(to bottom, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); -webkit-background-clip: text;
                                   -moz-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; vertical-align: middle;}
@@ -209,6 +216,13 @@
                 </div>
             </div>
         </div>
+
+        <div class="banner">
+            <img class="bannerimg" src="WebsiteMidBanner.jpg" >
+            <div class="bannerflex">
+                
+            </div>
+        </div>  
     
          <div class="quotescroll">
             <div class="qone"><i>"So, there I sat, a tipsy 26-year-old nuclear engineer, having cosmic radiation mansplained to me by a stranger who denied not only the moon landing, but the actual existence of outer-space."</i><br> -Taking Off the Tinfoil Hat</div>
@@ -264,9 +278,11 @@
                 </div>
                 <div class="contacts">
                     <p class="socials"  onmouseenter="makebig(this)" onmouseleave="makelittle(this)">
-                            <a href="https://www.instagram.com/taking.off.the.tinfoil.hat/" target="_blank" class="fa fa-instagram"></a> @taking.off.the.tinfoil.hat</p>
+                            <a href="https://www.instagram.com/taking.off.the.tinfoil.hat/" target="_blank" class="fa fa-instagram"></a></p>
                     <p class="socials"  onmouseenter="makebig(this)" onmouseleave="makelittle(this)">
-                            <a href="mailto: takingoffthetinfoilhat@gmail.com" target="_blank" class="fa fa-envelope"></a> takingoffthetinfoilhat@gmail.com</p>
+                            <a href="mailto: takingoffthetinfoilhat@gmail.com" target="_blank" class="fa fa-envelope"></a></p>
+                    <p class="socials"  onmouseenter="makebig(this)" onmouseleave="makelittle(this)">
+                            <a href="https://www.tiktok.com/@takingoffthetinfoilhat" target="_blank" class="fa fa-tiktok"></a></p>
                 </div>
             </div>
         </div>
