@@ -26,9 +26,9 @@ function bubbledown(x) {
 }  
   
 function makebig(x) {
- x.style.fontWeight="bold"; 
+ x.style.width="4.7vw"; 
 }
 
 function makelittle(x) {
-   x.style.fontWeight="normal"; 
+   x.style.width="4.5vw"; 
 }
