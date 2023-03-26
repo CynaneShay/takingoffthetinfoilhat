@@ -62,7 +62,8 @@
                     .creds {font-size: 1.1vw; }
             .banner {position: relative; display: flex; justify-content: center; align-items: center; border: 1vw 0; margin: 1vw 0; padding: 1vw 0; overflow: hidden}    
                 .bannerimg {width: 100%;} 
-                .bannerflex {display: flex; position: absolute; justify-content: center; align-items: center; border: 0; margin: 0; padding: 0; overflow: hidden}
+                .bannerflex {display: flex; flex-direction: row; position: absolute; justify-content: center; align-items: center; border: 0; margin: 0; padding: 0;}
+                    .resourcebutton {display: flex; position: absolute; justify-content: center; align-items: center;}
                             .fa-cross {background: -moz-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); 
                                   background: -webkit-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%);
                                   background: linear-gradient(to bottom, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); -webkit-background-clip: text;
@@ -233,11 +234,13 @@
         <div class="banner">
             <img class="bannerimg" src="WebsiteMidBanner.png" >
             <div class="bannerflex">
-                <span class="fa-stack fa-2x">
-                     <i class="fa fa-ban fa-stack-2x fa-4x" style="color: rgba(255, 255, 255, 0.5);"></i>
-                    <i class="fa fa-cross fa-stack-1x fa-4x"></i>
-                </span>
-                <p>EXvangelical<br>Resources</p>
+                <div class="resourcebutton">
+                    <span class="fa-stack fa-2x">
+                         <i class="fa fa-ban fa-stack-2x fa-4x" style="color: rgba(255, 255, 255, 0.5);"></i>
+                        <i class="fa fa-cross fa-stack-1x fa-4x"></i>
+                    </span>
+                    <p>EXvangelical<br>Resources</p>
+                </div>
             </div>
         </div>  
     
