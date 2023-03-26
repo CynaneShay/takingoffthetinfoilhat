@@ -79,9 +79,9 @@
                                   background: linear-gradient(to bottom, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); -webkit-background-clip: text;
                                   -moz-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; border-radius: 10%;
                                   margin: 0; padding: 0; border: 0; filter: drop-shadow(2px 2px #ae8625)}
-                            .bannerflex p {text-align: center; justify-content: center; align-items: center; font-family: "Raleway", sans-serif; font-size: 2.0vw; font-weight: 900; font-variant: small-caps;
-                                  filter: drop-shadow(1px 1px #ae8625); margin: 0; padding: 0; border: 0;
-                                  color: white;}
+                            .bannerflex p {text-align: center; justify-content: center; align-items: center; font-family: "Raleway", sans-serif; font-size: 2.0vw; 
+                                  font-weight: 900; font-variant: small-caps; filter: drop-shadow(1px 1px #ae8625); margin: 0; padding: 0; border: 0;
+                                  color: white; text-decoration: none;}
             .podcasts {width: 100%; font-family: "Raleway", sans-serif; font-size: 1.4vw; display: flex; flex-direction: column; align-items: center;
                          margin: 0; padding: 2vw 0 4vw 0; border: 0;}
                 .podlink {text-decoration: none; color: black; width: 60%; padding: 1vw; background-color: rgba(145, 177, 204, 0.1)}                
@@ -243,19 +243,25 @@
             <img class="bannerimg" src="WebsiteMidBanner.png" >
             <div class="bannerflex">
                 <div class="bannerbutton" onmouseenter="makebig(this)" onmouseleave="makelittle(this)">
-                    <i class="fa fa-atom fa-4x"></i>
-                    <p>About<br>Cynane</p>
+                    <a href="http://www.takingoffthetinfoilhat.com/about">
+                        <i class="fa fa-atom fa-4x"></i>
+                        <p>About<br>Cynane</p>
+                    </a>
                 </div>
                 <div class="bannerbutton" onmouseenter="makebig(this)" onmouseleave="makelittle(this)">
-                    <span class="fa-stack fa-3x">
-                        <i class="fa fa-ban fa-stack-1x fa-3x" style="color: rgba(255, 255, 255, 0.5);"></i>
-                        <i class="fa fa-church fa-stack-2x"></i> 
-                    </span>
-                    <p>EXvangelical<br>Resources</p>
+                    <a href="http://www.takingoffthetinfoilhat.com/resources">
+                        <span class="fa-stack fa-3x">
+                            <i class="fa fa-ban fa-stack-1x fa-3x" style="color: rgba(255, 255, 255, 0.5);"></i>
+                            <i class="fa fa-church fa-stack-2x"></i> 
+                        </span>
+                        <p>EXvangelical<br>Resources</p>
+                    </a>
                 </div>
                 <div class="bannerbutton" onmouseenter="makebig(this)" onmouseleave="makelittle(this)">
-                    <i class="fa-regular fa-paper-plane fa-4x"></i>
-                    <p>Reach<br>Out</p>
+                    <a href="http://www.takingoffthetinfoilhat.com/contact">
+                        <i class="fa-regular fa-paper-plane fa-4x"></i>
+                        <p>Reach<br>Out</p>
+                    </a>
                 </div>
             </div>
         </div>  
