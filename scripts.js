@@ -45,16 +45,15 @@ function makelittle(x) {
    x.style.fontWeight="normal"; 
 }
 
-function carouselboxin(x) {
-  x.style.boxShadow: 0 0 0 200px rgba(255,255,255,.9) inset;
+function carouselin(x) {
+  x.style.boxShadow= "0 0 0 200px rgba(255,255,255,.9) inset";
+  x.querySelector('.fa').style.opacity= "1"; 
+  x.querySelector('.fa').style.transform= "scale(1)";
 }
 
-function carouseliconin(x) {
+function carouselout(x) {
+  x.style.boxShadow= "none";
+  x.querySelector('.fa').style.opacity= "0"; 
+  x.querySelector('.fa').style.transform= "scale(0)";
 }
 
-function carouselboxout(x) {
-  x.style.boxShadow: none;
-}
-
-function carouseliconout(x) {
-}
