@@ -96,12 +96,11 @@
                                    background-color: rgba(145, 177, 204, 0.7); box-shadow: 0 0 0.5vw white; border: 0;}
                         .previous:hover, .next:hover {background-color: rgba(145, 177, 204, 1);}
                 .my-slider {width: 85%; position: abosolute; top: 0; margin: 0 auto;}
-                .slide {position: relative;}
+                .slide {position: relative; height: 22vw;}
                 .slideimg { height: 22vw; position: absolute;}
                 .slidebuttons {position:aboslute; height: 22vw; cursor: pointer; display: flex; justify-content: center;
                             align-items: center; flex-direction: column; transition: 0.5s;}
-                .slidebuttons i {text-decoration: none; transform: scale(0); transition: 0.8s; font-size: 3vw; color: rgba(145, 177, 204, 1); opacity: 0; padding: 1vw;}
-                    .slidebuttons:hover i {opacity: 1; transform: scale(1);}     
+                .slidebuttons i {text-decoration: none; transform: scale(0); transition: 0.8s; font-size: 3vw; color: rgba(145, 177, 204, 1); opacity: 0; padding: 1vw;}  
                 
             .podcasts {width: 100%; font-family: "Raleway", sans-serif; font-size: 1.4vw; display: flex; flex-direction: column; align-items: center;
                          margin: 0; padding: 2vw 0 4vw 0; border: 0;}
@@ -298,16 +297,16 @@
                             </div>
                             <div class="my-slider">
                                 <div>
-                                    <div class="slide" onmouseenter="carouselin(this,1)" onmouseleave="carouselout(this,1)">
+                                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
                                         <img class="slideimg" src="books/lovewins.jpg">
-                                        <div class="slidebuttons" id="slbt1">
+                                        <div class="slidebuttons">
                                             <i class="fa fa-circle-info"></i>
                                             <i class="fa fa-cart-shopping"></i>
                                         </div>
                                     </div>
                                 </div> 
                                 <div>
-                                    <div class="slide" onmouseenter="carouselin(this,2)" onmouseleave="carouselout(this,2)">
+                                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
                                         <img class="slideimg" src="books/jesusandjohnwayne.jpg">
                                         <div class="slidebuttons" id="slbt2">
                                             <i class="fa fa-circle-info"></i>
@@ -316,7 +315,7 @@
                                     </div>
                                 </div>  
                                 <div>
-                                    <div class="slide" onmouseenter="carouselin(this,3)" onmouseleave="carouselout(this,3)">
+                                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
                                         <img class="slideimg" src="books/howthebibleactuallyworks.jpg">
                                         <div class="slidebuttons" id="slbt3">
                                             <i class="fa fa-circle-info"></i>
@@ -325,7 +324,7 @@
                                     </div>
                                 </div>  
                                 <div>
-                                    <div class="slide" onmouseenter="carouselin(this,4)" onmouseleave="carouselout(this,4)">
+                                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
                                         <img class="slideimg" src="books/thecolorofcompromise.jpg">
                                         <div class="slidebuttons" id="slbt4">
                                             <i class="fa fa-circle-info"></i>
@@ -334,7 +333,7 @@
                                     </div>
                                 </div>  
                                 <div>
-                                    <div class="slide" onmouseenter="carouselin(this,5)" onmouseleave="carouselout(this,5)">
+                                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
                                         <img class="slideimg" src="whiteevangelicalracism.jpeg">
                                         <div class="slidebuttons"  id="slbt5">
                                             <i class="fa fa-circle-info"></i>
@@ -343,7 +342,7 @@
                                     </div>
                                 </div>  
                                 <div>
-                                    <div class="slide" onmouseenter="carouselin(this,6)" onmouseleave="carouselout(this,6)">
+                                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
                                         <img class="slideimg" src="thatallshallbesaved.jpg">
                                         <div class="slidebuttons" id="slbt6">
                                             <i class="fa fa-circle-info"></i>
@@ -352,7 +351,7 @@
                                     </div>
                                 </div>  
                                 <div>
-                                    <div class="slide" onmouseenter="carouselin(this,7)" onmouseleave="carouselout(this,7)">
+                                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
                                         <img class="slideimg" src="cultsinourmidst.jpg">
                                         <div class="slidebuttons"  id="slbt7">
                                             <i class="fa fa-circle-info"></i>
@@ -361,7 +360,7 @@
                                     </div>
                                 </div>  
                                 <div>
-                                    <div class="slide" onmouseenter="carouselin(this,8)" onmouseleave="carouselout(this,8)">
+                                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
                                         <img class="slideimg" src="theanatomyoffascism.jpg">
                                         <div class="slidebuttons"  id="slbt8">
                                             <i class="fa fa-circle-info"></i>
