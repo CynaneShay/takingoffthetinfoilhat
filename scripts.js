@@ -47,13 +47,17 @@ function makelittle(x) {
 
 function carouselin(x) {
   x.style.boxShadow= "0 0 0 200px rgba(255,255,255,.9) inset";
-  x.querySelector('.fa').style.opacity= "1"; 
-  x.querySelector('.fa').style.transform= "scale(1)";
+  x.querySelector('.fa-circle-info').style.opacity= "1"; 
+  x.querySelector('.fa-circle-info').style.transform= "scale(1)";
+  x.querySelector('.fa-cart-shopping').style.opacity= "1"; 
+  x.querySelector('.fa-cart-shopping').style.transform= "scale(1)";
 }
 
 function carouselout(x) {
   x.style.boxShadow= "none";
-  x.querySelector('.fa').style.opacity= "0"; 
-  x.querySelector('.fa').style.transform= "scale(0)";
+  x.querySelector('.fa-circle-info').style.opacity= "0"; 
+  x.querySelector('.fa-circle-info').style.transform= "scale(0)";
+  x.querySelector('.fa-cart-shopping').style.opacity= "0"; 
+  x.querySelector('.fa-cart-shopping').style.transform= "scale(0)";
 }
 
