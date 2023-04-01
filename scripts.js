@@ -44,3 +44,17 @@ function makebig(x) {
 function makelittle(x) {
    x.style.fontWeight="normal"; 
 }
+
+function carouselboxin(x) {
+  box-shadow: 0 0 0 200px rgba(255,255,255,.9) inset;
+}
+
+function carouseliconin(x) {
+}
+
+function carouselboxout(x) {
+  box-shadow: none;
+}
+
+function carouseliconout(x) {
+}
