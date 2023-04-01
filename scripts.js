@@ -46,14 +46,14 @@ function makelittle(x) {
 }
 
 function carouselboxin(x) {
-  box-shadow: 0 0 0 200px rgba(255,255,255,.9) inset;
+  x.style.boxShadow: 0 0 0 200px rgba(255,255,255,.9) inset;
 }
 
 function carouseliconin(x) {
 }
 
 function carouselboxout(x) {
-  box-shadow: none;
+  x.style.boxShadow: none;
 }
 
 function carouseliconout(x) {
