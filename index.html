@@ -96,20 +96,14 @@
                                    background-color: rgba(145, 177, 204, 0.7); box-shadow: 0 0 0.5vw white; border: 0;}
                         .previous:hover, .next:hover {background-color: rgba(145, 177, 204, 1);}
                 .my-slider {width: 85%; position: abosolute; top: 0; margin: 0 auto;}
-                .slide-img {height: 22vw; background-position: center; background-size: cover; cursor: pointer; display: flex; justify-content: center;
+                .slide {position: relative;}
+                .slideimg { height: 22vw; position: absolute;}
+                .slidebuttons {position:aboslute; height: 22vw; cursor: pointer; display: flex; justify-content: center;
                             align-items: center; flex-direction: column; transition: 0.5s;}
-                    .slide-img:hover {box-shadow: 0 0 0 200px rgba(255,255,255,.9) inset;}
-                .slide-img i {text-decoration: none; transform: scale(0); transition: 0.8s; font-size: 3vw; color: rgba(145, 177, 204, 1); opacity: 0; padding: 1vw;}
-                    .slide-img:hover i {opacity: 1; transform: scale(1);}     
-                .img-1 {background-image: url(https://github.com/CynaneShay/takingoffthetinfoilhat/blob/main/books/howthebibleactuallyworks.jpg?raw=true);}
-                .img-2 {background-image: url(https://github.com/CynaneShay/takingoffthetinfoilhat/blob/main/books/jesusandjohnwayne.jpg?raw=true);}
-                .img-3 {background-image: url(https://github.com/CynaneShay/takingoffthetinfoilhat/blob/main/books/thecolorofcompromise.jpg?raw=true);}
-                .img-4 {background-image: url(https://github.com/CynaneShay/takingoffthetinfoilhat/blob/main/books/whiteevangelicalracism.jpeg?raw=true);}
-                .img-5 {background-image: url(https://github.com/CynaneShay/takingoffthetinfoilhat/blob/main/books/lovewins.jpg?raw=true);}
-                .img-6 {background-image: url(https://github.com/CynaneShay/takingoffthetinfoilhat/blob/main/books/thatallshallbesaved.jpg?raw=true);}
-                .img-7 {background-image: url(https://github.com/CynaneShay/takingoffthetinfoilhat/blob/main/books/theanatomyoffascism.jpg?raw=true);}
-                .img-8 {background-image: url(https://github.com/CynaneShay/takingoffthetinfoilhat/blob/main/books/cultsinourmidst.jpg?raw=true);}
-            
+                    .slidebuttons:hover {box-shadow: 0 0 0 200px rgba(255,255,255,.9) inset;}
+                .slidebuttons i {text-decoration: none; transform: scale(0); transition: 0.8s; font-size: 3vw; color: rgba(145, 177, 204, 1); opacity: 0; padding: 1vw;}
+                    .slidebuttons:hover i {opacity: 1; transform: scale(1);}     
+                
             .podcasts {width: 100%; font-family: "Raleway", sans-serif; font-size: 1.4vw; display: flex; flex-direction: column; align-items: center;
                          margin: 0; padding: 2vw 0 4vw 0; border: 0;}
                 .podlink {text-decoration: none; color: black; width: 60%; padding: 1vw; background-color: rgba(145, 177, 204, 0.1)}                
@@ -306,7 +300,8 @@
                             <div class="my-slider">
                                 <div>
                                     <div class="slide">
-                                        <div class="slide-img img-1">
+                                        <img class="slideimg" src="books/lovewins.jpg">
+                                        <div class="slidebuttons">
                                             <i class="fa fa-circle-info"></i>
                                             <i class="fa fa-cart-shopping"></i>
                                         </div>
@@ -314,7 +309,8 @@
                                 </div> 
                                 <div>
                                     <div class="slide">
-                                        <div class="slide-img img-2">
+                                        <img class="slideimg" src="books/jesusandjohnwayne.jpg">
+                                        <div class="slidebuttons">
                                             <i class="fa fa-circle-info"></i>
                                             <i class="fa fa-cart-shopping"></i>
                                         </div>
@@ -322,7 +318,8 @@
                                 </div>  
                                 <div>
                                     <div class="slide">
-                                        <div class="slide-img img-3">
+                                        <img class="slideimg" src="books/howthebibleactuallyworks.jpg">
+                                        <div class="slidebuttons">
                                             <i class="fa fa-circle-info"></i>
                                             <i class="fa fa-cart-shopping"></i>
                                         </div>
@@ -330,7 +327,8 @@
                                 </div>  
                                 <div>
                                     <div class="slide">
-                                        <div class="slide-img img-4">
+                                        <img class="slideimg" src="books/thecolorofcompromise.jpg">
+                                        <div class="slidebuttons">
                                             <i class="fa fa-circle-info"></i>
                                             <i class="fa fa-cart-shopping"></i>
                                         </div>
@@ -338,7 +336,8 @@
                                 </div>  
                                 <div>
                                     <div class="slide">
-                                        <div class="slide-img img-5">
+                                        <img class="slideimg" src="whiteevangelicalracism.jpeg">
+                                        <div class="slidebuttons">
                                             <i class="fa fa-circle-info"></i>
                                             <i class="fa fa-cart-shopping"></i>
                                         </div>
@@ -346,7 +345,8 @@
                                 </div>  
                                 <div>
                                     <div class="slide">
-                                        <div class="slide-img img-6">
+                                        <img class="slideimg" src="thatallshallbesaved.jpg">
+                                        <div class="slidebuttons">
                                             <i class="fa fa-circle-info"></i>
                                             <i class="fa fa-cart-shopping"></i>
                                         </div>
@@ -354,7 +354,8 @@
                                 </div>  
                                 <div>
                                     <div class="slide">
-                                        <div class="slide-img img-7">
+                                        <img class="slideimg" src="cultsinourmidst.jpg">
+                                        <div class="slidebuttons">
                                             <i class="fa fa-circle-info"></i>
                                             <i class="fa fa-cart-shopping"></i>
                                         </div>
@@ -362,7 +363,8 @@
                                 </div>  
                                 <div>
                                     <div class="slide">
-                                        <div class="slide-img img-8">
+                                        <img class="slideimg" src="theanatomyoffascism.jpg">
+                                        <div class="slidebuttons">
                                             <i class="fa fa-circle-info"></i>
                                             <i class="fa fa-cart-shopping"></i>
                                         </div>
