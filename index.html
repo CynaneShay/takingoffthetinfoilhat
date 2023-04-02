@@ -95,18 +95,17 @@
                     .previous, .next {padding: 0.5vw; width: 5vw; cursor: pointer; border-radius: 50%; outline: none; transition: 0.7s ease-in-out;
                                    background-color: rgba(145, 177, 204, 0.7); box-shadow: 0 0 0.5vw white; border: 0;}
                         .previous:hover, .next:hover {background-color: rgba(145, 177, 204, 1);}
-                .my-slider {width: 85%; position: abosolute; top: 0; margin: 0 auto;}
+                .my-slider {width: 80%; position: abosolute; top: 0; margin: 0 auto;}
                 .slide {position: relative; height: 22vw; margin: 0 auto; align-items: center; justify-content: center;}
                 .slideimg { height: 22vw; position: absolute; margin: 0 auto;  left: 50%; transform: translate(-50%,0)}
                 .slidebuttons {position: aboslute; height: 100%; width: 100%; cursor: pointer; display: flex; justify-content: center;
                             align-items: center; flex-direction: column; transition: 0.5s; margin: 0 auto;}
                     .slide:hover {box-shadow: 10px 10px rgba(255,255,255,0.9) inset;}
                 .slidebuttons i {text-decoration: none; transform: scale(0); transition: 0.5s; font-size: 3vw; color: rgba(145, 177, 204, 1); 
-                            opacity: 0; padding: 1vw; margin: 0 auto;}  
-                    .slide:hover .fa-cart-shopping {opacity: 1; transform: scale(1); background-color: white; border-radius: 50%;}
-                        .fa-cart-shopping:hover {opacity: 1; transform: scale(1); background-color: white; border-radius: 50%;}
-                    .slide:hover .fa-circle-info {opacity: 1; transform: scale(1); background-color: white; border-radius: 50%;}
-                        .fa-circle-info:hover {opacity: 1; transform: scale(1); background-color: white; border-radius: 50%;}
+                            opacity: 0; margin: 0 auto;}
+                .slidebuttons i .fa {padding: 1vw;}
+                    .slide:hover .fa {opacity: 1; transform: scale(1); background-color: white; border-radius: 50%;}
+                        .slide .fa:hover {opacity: 1; transform: scale(1); background-color: white; border-radius: 50%;}
             .podcasts {width: 100%; font-family: "Raleway", sans-serif; font-size: 1.4vw; display: flex; flex-direction: column; align-items: center;
                          margin: 0; padding: 2vw 0 4vw 0; border: 0;}
                 .podlink {text-decoration: none; color: black; width: 60%; padding: 1vw; background-color: rgba(145, 177, 204, 0.1)}                
