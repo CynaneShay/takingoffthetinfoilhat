@@ -84,22 +84,24 @@
                             .bannerflex p {text-align: center; justify-content: center; align-items: center; font-family: "Raleway", sans-serif; font-size: 2.0vw; 
                                   font-weight: 900; font-variant: small-caps; filter: drop-shadow(1px 1px #ae8625); margin: 0; padding: 0; border: 0;
                                   color: white;}
-            .container {position: relative;}
-                #slider {height: 22vw; padding: 0 0 5vw 0; margin: 0 auto; position: absolute; z-index=6;}
-                .controller {width: 95%; position: absolute; z-index: 2; top: 9vw;}
-                    #controls {width: 100%; display: flex; justify-content: space-between; margin: 0 auto;}
+            #slider {height: 22vw; display: flex; justify-content: center; align-items: center; padding: 0 0 5vw 0;}
+                .container {width:100%;}
+                .subcontainer {width: 100%; margin: auto;}
+                .slider-wrapper {width: 100%; position: relative; align-items: center;}
+                .controller {width: 100%; position: absolute; z-index: 3; top: 20vw;}
+                    #controls {width: 95%; display: flex; justify-content: space-between; margin: 0 auto;}
                         #controls i {width: 100%; color: white; font-size: 3vw;}
                     .previous, .next {padding: 0.5vw; width: 5vw; cursor: pointer; border-radius: 50%; outline: none; transition: 0.7s ease-in-out;
                                    background-color: rgba(145, 177, 204, 0.7); border: 0;}
                         .previous:hover, .next:hover {background-color: rgba(145, 177, 204, 1);}
-                .my-slider {top: 0; margin: 0 auto;}
+                .my-slider {width: 75vw; position: abosolute; top: 0; margin: 0 auto;}
                 .slide {position: relative; height: 22vw; margin: 0 auto; align-items: center; justify-content: center;}
-                    .slideimg {height: 22vw; position: absolute; margin: 0 auto; left: 50%; transform: translate(-50%,0); z-index: 7;}
-                    .fog {height: 100%; width: 100%; transition: 0.5s; position: absolute; z-index: 8;}
+                    .slideimg {height: 22vw; position: absolute; margin: 0 auto; left: 50%; transform: translate(-50%,0); z-index: 1;}
+                    .fog {height: 100%; width: 100%; transition: 0.5s; position: absolute; z-index: 2;}
                     .fa-circle-info {position: absolute; left: 50%; transform: translate(-50%,-50%); top: 33%; transition: 0.5s; opacity: 0;
-                                     font-size: 3vw; color: rgba(145, 177, 204, 1); padding: 0; border: 0; margin: 0; z-index: 10;}
+                                     font-size: 3vw; color: rgba(145, 177, 204, 1); padding: 0; border: 0; margin: 0; z-index: 4;}
                     .fa-cart-shopping {position: absolute; left: 50%; transform: translate(-50%,-50%); top: 66%; transition: 0.5s; opacity: 0;
-                                     font-size: 3vw; color: rgba(145, 177, 204, 1); padding: 0; border: 0; margin: 0; z-index: 10;}
+                                     font-size: 3vw; color: rgba(145, 177, 204, 1); padding: 0; border: 0; margin: 0; z-index: 4;}
             .podcasts {width: 100%; font-family: "Raleway", sans-serif; font-size: 1.4vw; display: flex; flex-direction: column; align-items: center;
                          margin: 0; padding: 2vw 0 4vw 0; border: 0;}
                 .podlink {text-decoration: none; color: black; width: 60%; padding: 1vw; background-color: rgba(145, 177, 204, 0.1)}                
@@ -107,7 +109,7 @@
                     .podphoto img {border-radius: 15%; height: 5vw; box-shadow: 2px 2px 10px white; margin: 1vw;}
                     .podtext {display: flex; flex-direction: column; align-items: left; line-height: 1.5;}
             .mybook {background-color: #91b1cc;}
-            .newsletter {width: 60%; font-family: "Raleway", sans-serif; font-size: 1.4vw; margin: 0 auto; padding: 2vw 0 4vw 0; border: 0;}
+            .newsletter {width: 60%; font-family: "Raleway", sans-serif; font-size: 1.4vw; margin: 0; padding: 2vw 0 4vw 0; border: 0;}
                 .nlbox {width: 100%; display: flex; flex-direction: row; align-items: center; margin: 0 auto; padding: 2vw 0 4vw 0; border: 0;}
                 .formdiv {font-family: "Raleway", sans-serif; font-size: 1.8vw; margin: 0 auto;}
                     .formdiv label, .formdiv button {padding: 1vw;}
@@ -288,83 +290,86 @@
             </div>
         </div>  
     
-        
-    <div class="container">
         <div id="slider">
-            <div class="my-slider">
-                <div>
-                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
-                        <img class="slideimg" src="books/lovewins.jpg">
-                        <div class="fog"></div>
-                        <i class="fa fa-circle-info"  href=""></i>
-                        <i class="fa fa-cart-shopping" href="https://www.amazon.com/Love-Wins-About-Heaven-Person/dp/0062049658/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank"></i>
+              <div class="container">
+                    <div class="subcontainer">
+                        <div class="slider-wrapper">
+                            <div class="controller">
+                                <div id="controls">
+                                    <button class="previous"><i class="fa fa-arrow-left"></i></button>
+                                    <button class="next"><i class="fa fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                            <div class="my-slider">
+                                <div>
+                                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
+                                        <img class="slideimg" src="books/lovewins.jpg">
+                                        <div class="fog"></div>
+                                        <i class="fa fa-circle-info"  href=""></i>
+                                        <i class="fa fa-cart-shopping" href="https://www.amazon.com/Love-Wins-About-Heaven-Person/dp/0062049658/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank"></i>
+                                    </div>
+                                </div> 
+                                <div>
+                                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
+                                        <img class="slideimg" src="books/jesusandjohnwayne.jpg">
+                                        <div class="fog"></div>
+                                        <i class="fa fa-circle-info" href=""></i>
+                                        <i class="fa fa-cart-shopping" href="https://www.amazon.com/Jesus-John-Wayne-Evangelicals-Corrupted/dp/163149905X/ref=sr_1_1?crid=3P8N3M53M491Z&keywords=jesus+and+john+wayne&qid=1680481832&s=books&sprefix=jesus+and+john+wayn%2Cstripbooks%2C159&sr=1-1" target="_blank"></i>
+                                    </div>
+                                </div>  
+                                <div>
+                                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
+                                        <img class="slideimg" src="books/howthebibleactuallyworks.jpg">
+                                        <div class="fog"></div>
+                                        <i class="fa fa-circle-info" href=""></i>
+                                        <i class="fa fa-cart-shopping" href="https://www.amazon.com/How-Bible-Actually-Works-Answers_and/dp/0062686755/ref=sr_1_1?crid=3L474P90QLCXW&keywords=how+the+bible+actually+works&qid=1680481860&s=books&sprefix=how+the+bible+actually+work%2Cstripbooks%2C208&sr=1-1" target="_blank"></i>
+                                    </div>
+                                </div>  
+                                <div>
+                                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
+                                        <img class="slideimg" src="books/thecolorofcompromise.jpg">
+                                        <div class="fog"></div>
+                                        <i class="fa fa-circle-info" href=""></i>
+                                        <i class="fa fa-cart-shopping" href="https://www.amazon.com/Color-Compromise-American-Churchs-Complicity/dp/0310113601/ref=sr_1_1?crid=1JIFKF2NIBX48&keywords=the+color+of+compromise&qid=1680481882&s=books&sprefix=the+color+of+compromis%2Cstripbooks%2C235&sr=1-1" target="_blank"></i>
+                                    </div>
+                                </div>  
+                                <div>
+                                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
+                                        <img class="slideimg" src="books/whiteevangelicalracism.jpeg">
+                                        <div class="fog"></div>
+                                        <i class="fa fa-circle-info" href=""></i>
+                                        <i class="fa fa-cart-shopping" href="https://www.amazon.com/White-Evangelical-Racism-Politics-Morality/dp/1469661179/ref=sr_1_1?crid=2V4G3QRBPR7A4&keywords=white+evangelical+racism&qid=1680481909&s=books&sprefix=white+evangelical+racis%2Cstripbooks%2C175&sr=1-1" target="_blank"></i>
+                                    </div>
+                                </div>  
+                                <div>
+                                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
+                                        <img class="slideimg" src="books/thatallshallbesaved.jpg">
+                                        <div class="fog"></div>
+                                        <i class="fa fa-circle-info" href=""></i>
+                                        <i class="fa fa-cart-shopping" href="https://www.amazon.com/That-All-Shall-Saved-Universal/dp/0300258488/ref=sr_1_1?crid=2XG6RN0Z23HJ0&keywords=that+all+shall+be+saved&qid=1680481940&s=books&sprefix=that+all+shall+be+saved%2Cstripbooks%2C178&sr=1-1" target="_blank"></i>
+                                    </div>
+                                </div>  
+                                <div>
+                                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
+                                        <img class="slideimg" src="books/cultsinourmidst.jpg">
+                                        <div class="fog"></div>
+                                        <i class="fa fa-circle-info" href=""></i>
+                                        <i class="fa fa-cart-shopping" href="https://www.amazon.com/Cults-Our-Midst-Continuing-Against/dp/0787967416/ref=sr_1_1?crid=JIK2M4A47JRJ&keywords=cults+in+our+midst&qid=1680481963&s=books&sprefix=cults+in+our+midst%2Cstripbooks%2C252&sr=1-1" target="_blank"></i>
+                                    </div>
+                                </div>  
+                                <div>
+                                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
+                                        <img class="slideimg" src="books/theanatomyoffascism.jpg">
+                                        <div class="fog"></div>
+                                        <i class="fa fa-circle-info" href=""></i>
+                                        <i class="fa fa-cart-shopping" href="https://www.amazon.com/Anatomy-Fascism-Robert-Paxton/dp/1400033918/ref=sr_1_1?crid=SM08YJ3EFGR6&keywords=the+anatomy+of+fascism&qid=1680481992&s=books&sprefix=the+anatomy+of+fascism%2Cstripbooks%2C215&sr=1-1" target="_blank"></i>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
                     </div>
-                </div> 
-                <div>
-                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
-                        <img class="slideimg" src="books/jesusandjohnwayne.jpg">
-                        <div class="fog"></div>
-                        <i class="fa fa-circle-info" href=""></i>
-                        <i class="fa fa-cart-shopping" href="https://www.amazon.com/Jesus-John-Wayne-Evangelicals-Corrupted/dp/163149905X/ref=sr_1_1?crid=3P8N3M53M491Z&keywords=jesus+and+john+wayne&qid=1680481832&s=books&sprefix=jesus+and+john+wayn%2Cstripbooks%2C159&sr=1-1" target="_blank"></i>
-                    </div>
-                </div>  
-                <div>
-                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
-                        <img class="slideimg" src="books/howthebibleactuallyworks.jpg">
-                        <div class="fog"></div>
-                        <i class="fa fa-circle-info" href=""></i>
-                        <i class="fa fa-cart-shopping" href="https://www.amazon.com/How-Bible-Actually-Works-Answers_and/dp/0062686755/ref=sr_1_1?crid=3L474P90QLCXW&keywords=how+the+bible+actually+works&qid=1680481860&s=books&sprefix=how+the+bible+actually+work%2Cstripbooks%2C208&sr=1-1" target="_blank"></i>
-                    </div>
-                </div>  
-                <div>
-                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
-                        <img class="slideimg" src="books/thecolorofcompromise.jpg">
-                        <div class="fog"></div>
-                        <i class="fa fa-circle-info" href=""></i>
-                        <i class="fa fa-cart-shopping" href="https://www.amazon.com/Color-Compromise-American-Churchs-Complicity/dp/0310113601/ref=sr_1_1?crid=1JIFKF2NIBX48&keywords=the+color+of+compromise&qid=1680481882&s=books&sprefix=the+color+of+compromis%2Cstripbooks%2C235&sr=1-1" target="_blank"></i>
-                    </div>
-                </div>  
-                <div>
-                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
-                        <img class="slideimg" src="books/whiteevangelicalracism.jpeg">
-                        <div class="fog"></div>
-                        <i class="fa fa-circle-info" href=""></i>
-                        <i class="fa fa-cart-shopping" href="https://www.amazon.com/White-Evangelical-Racism-Politics-Morality/dp/1469661179/ref=sr_1_1?crid=2V4G3QRBPR7A4&keywords=white+evangelical+racism&qid=1680481909&s=books&sprefix=white+evangelical+racis%2Cstripbooks%2C175&sr=1-1" target="_blank"></i>
-                    </div>
-                </div>  
-                <div>
-                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
-                        <img class="slideimg" src="books/thatallshallbesaved.jpg">
-                        <div class="fog"></div>
-                        <i class="fa fa-circle-info" href=""></i>
-                        <i class="fa fa-cart-shopping" href="https://www.amazon.com/That-All-Shall-Saved-Universal/dp/0300258488/ref=sr_1_1?crid=2XG6RN0Z23HJ0&keywords=that+all+shall+be+saved&qid=1680481940&s=books&sprefix=that+all+shall+be+saved%2Cstripbooks%2C178&sr=1-1" target="_blank"></i>
-                    </div>
-                </div>  
-                <div>
-                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
-                        <img class="slideimg" src="books/cultsinourmidst.jpg">
-                        <div class="fog"></div>
-                        <i class="fa fa-circle-info" href=""></i>
-                        <i class="fa fa-cart-shopping" href="https://www.amazon.com/Cults-Our-Midst-Continuing-Against/dp/0787967416/ref=sr_1_1?crid=JIK2M4A47JRJ&keywords=cults+in+our+midst&qid=1680481963&s=books&sprefix=cults+in+our+midst%2Cstripbooks%2C252&sr=1-1" target="_blank"></i>
-                    </div>
-                </div>  
-                <div>
-                    <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
-                        <img class="slideimg" src="books/theanatomyoffascism.jpg">
-                        <div class="fog"></div>
-                        <i class="fa fa-circle-info" href=""></i>
-                        <i class="fa fa-cart-shopping" href="https://www.amazon.com/Anatomy-Fascism-Robert-Paxton/dp/1400033918/ref=sr_1_1?crid=SM08YJ3EFGR6&keywords=the+anatomy+of+fascism&qid=1680481992&s=books&sprefix=the+anatomy+of+fascism%2Cstripbooks%2C215&sr=1-1" target="_blank"></i>
-                    </div>
-                </div>  
-            </div>        
+              </div>
         </div>
-        <div class="controller">
-            <div id="controls">
-                <button class="previous"><i class="fa fa-arrow-left"></i></button>
-                <button class="next"><i class="fa fa-arrow-right"></i></button>
-            </div>
-        </div>
-    </div>
                 
         <div class="podcasts">
             <div class="hype"><strong>Interviews</strong></div> 
@@ -431,7 +436,7 @@
             </div>
         </div>
     
-<i class="fa fa-cart-shopping" style= "opacity: 1;" href="https://www.amazon.com/Anatomy-Fascism-Robert-Paxton/dp/1400033918/ref=sr_1_1?crid=SM08YJ3EFGR6&keywords=the+anatomy+of+fascism&qid=1680481992&s=books&sprefix=the+anatomy+of+fascism%2Cstripbooks%2C215&sr=1-1" target="_blank"></i>
+<i href="https://www.amazon.com/Anatomy-Fascism-Robert-Paxton/dp/1400033918/ref=sr_1_1?crid=SM08YJ3EFGR6&keywords=the+anatomy+of+fascism&qid=1680481992&s=books&sprefix=the+anatomy+of+fascism%2Cstripbooks%2C215&sr=1-1" target="_blank" class="fa fa-cart-shopping" style= "opacity: 1;"></i>
     
         <div class="footer">
             <img class="footerimg" src="WebsiteFooter.clouds.jpg" >
