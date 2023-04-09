@@ -61,15 +61,17 @@
                     .revname {width: 80%; transform: translateX(10%); line-height: 1.5;}
                     .creds {font-size: 1.1vw; }
             .banner {position: relative; display: flex; justify-content: center; align-items: center; border: 1vw 0; margin: 1vw 0; padding: 1vw 0; overflow: hidden}    
-                .bannerimg {width: 100%;} 
-                .bannerflex {width: 100%; display: flex; flex-direction: row; position: absolute; justify-content: center; align-items: center; border: 0; margin: 0; padding: 0;}
-                    .bannerbutton {display: flex; flex-direction: column; justify-content: center; align-items: center;  margin: 0; padding: 0 5.4vw 0 5vw; border: 0; text-align: center;}
+                .bannerimg {width: 100%; position: absolute; top: 50%; transform: translate(-50%,0);} 
+                    .bannerbutton {position: absolute; display: flex; flex-direction: column; justify-content: center; align-items: center;  margin: 0; padding: 0 5.4vw 0 5vw; border: 0; text-align: center;}
+                        .bannerbutton bannerabout {Left: 40%; top: 50%; transform: translate(-50%,-50%);}
+                        .bannerbutton bannerresources {left: 50%; top: 50%; transform: translate(-50%,-50%);}
+                        .bannerbutton bannercontact {left: 60%; top: 50%; transform: translate(-50%,-50%);}
                             .fa-church {font-size: 4.7vw; background: -moz-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); 
                                   background: -webkit-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%);
                                   background: linear-gradient(to top right, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); -webkit-background-clip: text;
                                   -moz-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; border-radius: 10%;
                                   margin: 0; padding: 0; border: 0; filter: drop-shadow(2px 2px #ae8625)}
-                            .fa-ban {font-size: 4.7vw; color: rgba(255, 255, 255, 0.3);}
+                            .fa-ban {font-size: 6vw; color: rgba(255, 255, 255, 0.3);}
                             .fa-paper-plane {font-size: 4.7vw; background: -moz-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); 
                                   background: -webkit-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%);
                                   background: linear-gradient(to top right, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); -webkit-background-clip: text;
@@ -115,6 +117,7 @@
                                 background-color: rgba(145, 177, 204, 0.1); padding: 1vw 3vw;}
                         .formdiv input {height: 2.6vw; width: 100%; padding: .5vw; font-family: "Raleway", sans-serif; font-size: 1.2vw; color: #d3d3d3; 
                                 border: solid .1vw #d3d3d3; margin: 0 auto;}
+                                :focus {border: solid .2vw #d3d3d3;}
                                 ::placeholder {color: #d3d3d3; opacity: 1;}
                                 :-ms-input-placeholder {color: #d3d3d3;}
                                 ::-ms-input-placeholder {color: #d3d3d3;}
@@ -274,20 +277,20 @@
         <div class="banner">
             <img class="bannerimg" src="WebsiteMidBanner.png" >
             <div class="bannerflex">
-                <div class="bannerbutton">
+                <div class="bannerbutton bannerabout">
                     <a href="http://www.takingoffthetinfoilhat.com/about" style="text-decoration: none; text-align: center;">
                         <i class="fa fa-atom" onmouseenter="makebig(this)" onmouseleave="makelittle(this)"></i>
                         <p>About<br>Cynane</p>
                     </a>
                 </div>
-                <div class="bannerbutton">
+                <div class="bannerbutton bannerresources">
                     <a href="http://www.takingoffthetinfoilhat.com/resources" style="text-decoration: none; text-align: center;">
                             <!-- <i class="fa fa-ban"></i> -->
                             <i class="fa fa-church" onmouseenter="makebig(this)" onmouseleave="makelittle(this)"></i> 
                         <p>EXvangelical<br>Resources</p>
                     </a>
                 </div>
-                <div class="bannerbutton">
+                <div class="bannerbutton bannercontact">
                     <a href="http://www.takingoffthetinfoilhat.com/contact" style="text-decoration: none; text-align: center;">
                         <i class="fa-regular fa-paper-plane" onmouseenter="makebig(this)" onmouseleave="makelittle(this)"></i>
                         <p>Reach<br>Out</p>
