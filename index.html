@@ -157,20 +157,22 @@
                                       -moz-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; border-radius: 10%; vertical-align: middle;}
         
         @media only screen and (max-width: 800px) {
-            #myBtn {display: none; position: fixed; font-family: "Raleway", sans-serif; bottom: 4vw; right: 2vw; z-index: 99; border: none; outline: none; background-color: rgba(255, 255, 255, 0.4); color: grey; 
-                    padding: 1vw 1.2vw; border-radius: 10px; font-size: 4vw;}
             .header {position: relative; display: block; border: 0; margin: 0; padding: 0; overflow: hidden}
                 .header img {width:200%; display: block; margin: 0; padding: 0; border: 0; transform: translatex(-25%);}
                 .title {font-family: "Raleway", sans-serif; font-size: 5.5vw; font-variant: small-caps; font-weight: 100; letter-spacing: 5px;
                         border: 0; margin: 0; padding: 0;}
                 .inprog {font-family: "Raleway", sans-serif; font-size: 1.7vw; font-variant: small-caps; font-weight: 600; border: 0; margin: 0; padding: 0;}
-            .menu { display: flex; flex-direction: row; justify-content: center; align-items: center; 
-                    width: 100%; font-weight: bold; font-family: "Raleway", sans-serif; font-size: 2.7vw; text-shadow: 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000;;
-                    height: 4.8vw; color: black; background: linear-gradient(to bottom, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%);
-                    margin: 0; padding: 0; border: 0; font-variant: small-caps;}
-                .desktopmenu {display: none;}
-                .menulink {text-decoration: none; color: black;}
-                    .menubutton {border: 0; margin: 0; padding: 0;}
+            .menu {width: 100%; background: linear-gradient(to bottom, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%);
+                margin: 0; padding: 0; border: 0; height: 4.4vw;}
+            .desktopmenu {display: none;}
+            .mobilemenu {display: flex; flex-direction: column; justify-content: start; align-items: center; position fixed; top: 0; left: 0; width: 100%; 
+                        height: 0vh; background: white; font-family: "Raleway", sans-serif; font-size: 2.7vw; color: #7B99B2; overflow: hidden;
+                        margin: 0; padding: 0; border: 0; font-variant: small-caps; text-decoration: none;}
+                .nav-containter.active .mobilemenu {height: 100vh;}
+                .mobilemenu li {width: 100%; padding: 0 32px;}
+                .mobilemenu li:first-child {margin-top: 120px;}
+            
+  
             .main {display: flex; background: #FFFDEF; width: 100%; flex-direction: column; justify-content: center; align-items: center;
                     margin: 0; padding: 4.5vw 0; border: 0;}
                 .subtitle {text-align: center; font-family: "Raleway", sans-serif; font-size: 3.4vw; font-weight: bold; 
@@ -202,7 +204,7 @@
 
     <body>
         
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-circle-up fa-4x" style="color: rgba(255, 255, 255, 0.4);"></i></button>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-circle-up fa-4x" style="color: rgba(255, 253, 239, 0.5);"></i></button>
         
         <div class="header">
             <img src="WebsiteHeader.resize.jpg">
@@ -219,14 +221,24 @@
                 <a href="http://www.takingoffthetinfoilhat.com/resources">Resources</a>
                 <a href="http://www.takingoffthetinfoilhat.com/blog">Blog</a>
             </div>
-            <div class="mobilemenu">
-                <a href="http://www.takingoffthetinfoilhat.com/about">About</a>
-                <a href="http://www.takingoffthetinfoilhat.com/contact">Contact</a>
-                <a href="http://www.takingoffthetinfoilhat.com/resources">Resources</a>
-                <a href="http://www.takingoffthetinfoilhat.com/blog">Blog</a>
-            </div>
         </div>
-        
+        <div class="nav-container">
+            <ul class="mobilemenu">
+                <li>
+                    <div class="menu-icon-container">
+                        <div class="menu-icon">
+                            <span class="line-1"></span>
+                            <span class="line-2"></span>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="http://www.takingoffthetinfoilhat.com/about">About</a></li>
+                <li><a href="http://www.takingoffthetinfoilhat.com/contact">Contact</a></li>
+                <li><a href="http://www.takingoffthetinfoilhat.com/resources">Resources</a></li>
+                <li><a href="http://www.takingoffthetinfoilhat.com/blog">Blog</a></li>
+            </ul>
+        </div>
+
         <div class="main">
           <div class="maindiv">
             <div class="subtitle">
