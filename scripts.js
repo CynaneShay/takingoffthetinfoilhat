@@ -57,7 +57,7 @@ function carouselout(x) {
   x.querySelector('.fa-cart-shopping').style.opacity= "0"; 
 }
 
-const menuIconContainer = document.querySelector(".nav-container .mobilemenu .menu-icon-container")
+const menuIconContainer = document.querySelector(".nav-container .menu-icon-container")
 const navContainer = document.querySelector(".nav-container")
 menuIconContainer.addEventListener("click", () => {
     navContainer.classList.toggle("active");
