@@ -177,13 +177,13 @@
                 .mobilemenu li {width: 100%; padding: 0 32px;}
                 .mobilemenu li:first-child {margin-top: 120px;}
             .menu-icon-container {width: 20px; height: 44px; display: flex; align-items: center; cursor: pointer;}
-                .menu-icon {position: relative; width: 100%;}
+                .menu-icon {position: relative; width: 100%; z-index: 300;}
                 .menu-icon .line-1, .menu-icon .line-2 {position: absolute; height: 2px; width: 100%; 
                     background-image: linear-gradient(to top right, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%);}
                 .menu-icon .line-1 {top: -4px;}
                 .menu-icon .line-2 {top: 4px;}
-                .nav-container.active .mobilemenu .menu-icon-container .menu-icon .line-1 {top: 0; transform: rotateZ(45deg);}
-                .nav-container.active .mobilemenu .menu-icon-container .menu-icon .line-2 {top: 0; transform: rotateZ(-45deg);}
+                .nav-container.active .menu-icon-container .menu-icon .line-1 {top: 0; transform: rotateZ(45deg);}
+                .nav-container.active .menu-icon-container .menu-icon .line-2 {top: 0; transform: rotateZ(-45deg);}
   
             .main {display: flex; background: #FFFDEF; width: 100%; flex-direction: column; justify-content: center; align-items: center;
                     margin: 0; padding: 4.5vw 0; border: 0;}
@@ -235,15 +235,13 @@
             </div>
         </div>
         <div class="nav-container">
+            <div class="menu-icon-container">
+                <div class="menu-icon">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                </div>
+            </div>
             <ul class="mobilemenu">
-                <li>
-                    <div class="menu-icon-container">
-                        <div class="menu-icon">
-                            <span class="line-1"></span>
-                            <span class="line-2"></span>
-                        </div>
-                    </div>
-                </li>
                 <li><a href="http://www.takingoffthetinfoilhat.com/about">About</a></li>
                 <li><a href="http://www.takingoffthetinfoilhat.com/contact">Contact</a></li>
                 <li><a href="http://www.takingoffthetinfoilhat.com/resources">Resources</a></li>
