@@ -180,9 +180,9 @@
                     .mobilemenu .menuopt {padding: 4vw 0;}
                     .mobilemenu .menuopt, .mobilemenu a:link, .mobilemenu a:visited,  .mobilemenu a:hover,  .mobilemenu a:active  {text-decoration: none!important;}
                     .mobilemenu .menulogo {display: flex; justify-content: center; align-items: center;} 
-                    .mobilemenu img {width: 30vw; margin: 0 auto; padding: 5vw 0 15vw 0; display: block; transform: translatex(.1%);}
-                    .mobilemenu .menusocials {display: flex; flex-direction: row; justify-content: center; text-decoration: none;}
-                        .mobilemenu .menusocials a i {padding: 2vw;}
+                    .mobilemenu img {width: 30vw; margin: 0 auto; padding: 5vw 0 12vw 0; display: block; transform: translatex(.1%);}
+                    .mobilemenu .menusocials {display: flex; flex-direction: row; justify-content: center; text-decoration: none; padding: 3vw 0 0 0;}
+                        .mobilemenu .menusocials a i {padding: 3vw;}
                 .menu-icon-container {width: 40px; height: 44px; display: flex; align-items: center; cursor: pointer; position: absolute; top: 5px; right: 30px;
                                     -webkit-tap-highlight-color: transparent;}
                     .menu-icon {position: relative; width: 100%; z-index: 500;}
@@ -195,7 +195,6 @@
                         .nav-container.active .menu-icon-container .menu-icon .line-2 {width: 0;}
                         .nav-container.active .menu-icon-container .menu-icon .line-3 {top: 0; transform: rotateZ(-45deg); transition: 0.5s;}
                         .nav-container.active .menu-icon-container {position: fixed; top: 5px; right: 30px; z-index: 500;}
-  
             .main {display: flex; background: #FFFDEF; width: 100%; flex-direction: column; justify-content: center; align-items: center;
                     margin: 0; padding: 4.5vw 0; border: 0;}
             .maindiv {display: flex; flex-direction: column; width: 100%; justify-content: center; align-items: center; margin: 0; padding: 0; border: 0;}
@@ -203,17 +202,21 @@
                            padding: 6vw 0 15vw 0; margin:0; font-variant: small-caps; width: 80%;}
                 .bodytextone, .bodytexttwo {width: 70%; font-family: "Raleway", sans-serif; font-size: 4.5vw; text-align: left; margin: 0; padding: 4.5vw;
                             border: 0; font-weight: 300; line-height: 1.5; background-color: rgb(255,255,255,0.7);}
-            .quotescroll{width:100%; height: 20vw; text-align: center; font-family: "Raleway", sans-serif; font-size: 5vw; background-color: #91b1cc; color: white;
+            .quotescroll{width:100%; height: 25vw; text-align: center; font-family: "Raleway", sans-serif; font-size: 5vw; background-color: #91b1cc; color: white;
                             position: relative; display: inline-block; margin: 0; padding: 8vw 0 8vw 0; border: 0;}
             
             .reviews {width: 100%; font-family: "Raleway", sans-serif; font-size: 4.5vw; 
                         display: flex; flex-direction: column; align-items: center;
                          margin: 0; padding: 2vw 0 4vw 0; border: 0;}
-                .hype {width: 70%; font-size: 7vw; text-align: left; font-variant: small-caps; border: 0; margin: 0; padding: 4vw;}
-                .rev {width: 70%; background-color: rgba(145, 177, 204, 0.1); padding: 4vw; margin: 0; border: 0;}
+                .hype {width: 70%; font-size: 8vw; text-align: left; font-variant: small-caps; border: 0; margin: 0; padding: 10vw 4vw 4vw 4vw;}
+                .rev {width: 70%; background-color: rgba(145, 177, 204, 0.1); margin: 0; border: 0; font-size: 4.5vw;}
+                    .rev .one {transform: translatex(-15%); padding: 8vw 12vw 8vw 8vw;}
+                        .revbook {font-size: 4.5vw; text-variant: small-caps;}
+                    .rev .two {transform: translatex(15%); padding: 8vw 8vw 8vw 12vw;}
                     .revtext {}
                     .revname {width: 80%; transform: translateX(10%);}
-                    .creds {font-size: 3.5vw;}
+                    .creds {font-size: 3.8vw;}
+            
             .footerimg {width: 350%; text-align: center;}
             .footerflex {display: flex; position: absolute; justify-content: space-around; align-items: center; border: 0; margin: 0; padding: 0; overflow: hidden}
                 .headshot img {border-radius: 50%; height: 22vw; box-shadow: 2px 2px 10px white; border: 0; margin: 0; padding: 0;}
@@ -318,7 +321,7 @@
 
         <div class="reviews">
             <div class="hype"><strong>The Hype</strong></div> 
-           <div class="rev">
+           <div class="rev one">
                 <div class="revtext"><i>"Many of us saw family and friends fall down the Q rabbit hole. This left us reeling trying to figure out the what, why, and how of these wild beliefs. 
                     <span class="revbook">Taking Off the Tinfoil Hat</span> breaks down the history and convergence of evangelicalism and conspiracy theories so that you can better understand this sad and heartbreaking reality. It's a must read!"</i><br><br>
                 </div>
@@ -327,7 +330,7 @@
                 </div>
             </div>
             <p></p>
-            <div class="rev">
+            <div class="rev two">
                  <div class="revtext"><i>"The greatest book ever written. Powerful. Haunting. Relatable. A must-read."</i><br><br></div>
                  <div class="revname">-Juliana Bennet, <span class="creds">totally unbiased best friend</span></div>
             </div>
