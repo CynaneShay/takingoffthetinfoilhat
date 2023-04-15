@@ -8,7 +8,7 @@ let slider=tns({container: ".my-slider",
                nextButton: ".next",
                responsive: {1600: {items: 5, gutter: 5},
                            1024: {items: 5, gutter: 5},
-                           768: {items: 4, gutter: 5},
+                           768: {items: 3, gutter: 5},
                            480: {items: 3, gutter: 5}}
                });
 
