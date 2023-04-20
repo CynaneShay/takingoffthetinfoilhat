@@ -45,31 +45,21 @@
                 .bodytext h2 {top: 0; left: 0;}
                 .bodytext p {font-family: "Raleway", sans-serif; font-size: 1.5vw; text-align: center; font-weight: 300; line-height: 1.5; 
                             margin: 0; padding: 5vw 0; border: 0; width: 100%; position: absolute; top: 7vw;}
-                .info .author {width: 35vw; height: 25vw; border-radius: 50%; background: rgb(255, 255, 255); position: absolute; display: flex; flex-direction: row;
-                        justify-content: center; align-items: center; top: 10vw; left: 25vw;}
-                .info .agent {width: 35vw; height: 25vw; border-radius: 50%; background: rgb(255, 255, 255); position: absolute; display: flex; flex-direction: row;
-                        justify-content: center; align-items: center; top: 40vw; right: 25vw;}
-                    .infocontact {font-family: "Raleway", sans-serif; font-size: 1.5vw; text-align: center;}
+                .info .author {width: 35vw; height: 25vw; border-radius: 50%; background-color: rgb(255,255,255,0.7); position: absolute; display: flex; flex-direction: row;
+                        justify-content: center; align-items: center; top: 10vw; left: 25vw; z-index: 101;}
+                .info .agent {width: 35vw; height: 25vw; border-radius: 50%; background-color: rgb(255,255,255,0.7); position: absolute; display: flex; flex-direction: row;
+                        justify-content: center; align-items: center; top: 40vw; right: 25vw; z-index: 100;}
+                    .headshot {text-align: center; font-family: "Raleway", sans-serif; font-size: 1.5vw;}
+                        .headshot img {border-radius: 50%; height: 12vw; box-shadow: 2px 2px 10px white; margin: 0;}
+                    .infocontact {font-family: "Share Tech Mono", sans-serif; font-size: 1.5vw; text-align: left; margin: 0;}
+                        .infocontact .fa-globe, .infocontact .fa-envelope {font-size: 3.5vw; background: -moz-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); 
+                                              background: -webkit-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%);
+                                              background: linear-gradient(to bottom, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); -webkit-background-clip: text;
+                                              -moz-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; vertical-align: middle;
+                                              padding: 0; text-align: center; text-decoration: none;}
             
-                    .headshot {text-align: center;}
-                        .headshot img {border-radius: 50%; height: 11.7vw; box-shadow: 2px 2px 10px white; margin: 0 5vw;}
-                    .info {display: flex; flex-direction: row; justify-content: center; align-items: center;}
-                        .contacts {font-family: "Share Tech Mono", sans-serif; font-size: 1.5vw; text-align: left; margin: 0vw 4.5vw;}
-                            .socials {background-color: rgba(255, 255, 255, 0.5); padding: 0.5vw 1.8vw 0.5vw; border-radius: 25px; width: 35vw;}
-                            .fa { padding: 0; font-size: 4.0vw; width: 4.7vw; text-align: center; text-decoration: none;}
-                            .fa-instagram { background: -moz-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); 
-                                          background: -webkit-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%);
-                                          background: linear-gradient(to bottom, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); -webkit-background-clip: text;
-                                          -moz-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; border-radius: 10%; 
-                                            vertical-align: middle;}
-                            .fa-envelope { background: -moz-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); 
-                                          background: -webkit-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%);
-                                          background: linear-gradient(to bottom, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); -webkit-background-clip: text;
-                                          -moz-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; vertical-align: middle;}
-                            .fa-globe { font-size: 5.0vw; background: -moz-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); 
-                                          background: -webkit-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%);
-                                          background: linear-gradient(to bottom, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); -webkit-background-clip: text;
-                                          -moz-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; vertical-align: middle;}
+ 
+                            
             .footer {position: relative; display: flex; justify-content: space-around; align-items: center; border: 0; margin: 0; padding: 0; overflow: hidden}
                 .footerimg {width: 100%;}                
                 .footerflex {display: flex; position: absolute; justify-content: space-around; align-items: center; border: 0; margin: 0; padding: 0; overflow: hidden}
@@ -195,14 +185,14 @@
             <div class="info author">
               <div class="headshot"><img src="Headshot1.jpg"><br><strong>Author:</strong><br>Cynane Shay</div>
               <div class="infocontact">
-                  <a href="mailto: takingoffthetinfoilhat@gmail.com" target="_blank" class="fa fa-envelope"> takingoffthetinfoilhat@gmail.com</a> 
+                  <a href="mailto: takingoffthetinfoilhat@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i> takingoffthetinfoilhat@gmail.com</a> 
               </div>
             </div>     
             <div class="info agent">
               <div class="headshot"><img src="Gerus.Headshot.jpg"><br><strong>Agent:</strong><br>Claire Gerus</div>
               <div class="infocontact">
-                  <a href="http://www.publishersmarketplace.com/members/Clairus" target="_blank" class="fa fa-globe"> Publishers Marketplace</a>
-                  <a href="mailto: takingoffthetinfoilhat@gmail.com" target="_blank" class="fa fa-envelope"> Gerus.Claire@gmail.com</a>
+                  <a href="http://www.publishersmarketplace.com/members/Clairus" target="_blank"><i class="fa-solid fa-globe"></i> Publishers Marketplace</a>
+                  <a href="mailto: takingoffthetinfoilhat@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i> Gerus.Claire@gmail.com</a>
               </div>                
             </div>   
         </section>
