@@ -169,7 +169,10 @@
                     .mobilemenu .menulogo {display: flex; justify-content: center; align-items: center;} 
                     .mobilemenu img {width: 30vw; margin: 0 auto; padding: 5vw 0 12vw 0; display: block; transform: translatex(.1%);}
                     .mobilemenu .menusocials {display: flex; flex-direction: row; justify-content: center; text-decoration: none; padding: 3vw 0 0 0;}
-                        .mobilemenu .menusocials a i {padding: 3vw;}
+                        .mobilemenu .menusocials a i {padding: 3vw; background: -moz-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); 
+                                      background: -webkit-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%);
+                                      background: linear-gradient(to bottom, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); -webkit-background-clip: text;
+                                      -moz-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;}
                 .menu-icon-container {width: 40px; height: 44px; display: flex; align-items: center; cursor: pointer; position: absolute; top: 5px; right: 30px;
                                     -webkit-tap-highlight-color: transparent;}
                     .menu-icon {position: relative; width: 100%; z-index: 500;}
