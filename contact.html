@@ -147,10 +147,12 @@
                 .bodytext h2 {background-image: linear-gradient(#FFFDEF, white); top: auto; left: auto;}
                 .bodytext p {font-family: "Raleway", sans-serif; font-size: 4.5vw; text-align: center; font-weight: 300; line-height: 1.5; 
                             margin: 0 auto; padding: 0 0 5vw 0; border: 0; width: 100%; position: static; top: auto; width: 80%;}
-                .author {width: 100%; height: auto; border-radius: 0%; background-color: rgba(145, 177, 204, 0.2); position: static; display: flex; flex-direction: column;
-                        justify-content: center; align-items: center; top: auto; left: auto; z-index: 0; padding: 4vw 0; margin: 5vw 0;}
-                .agent {width: 100%; height: auto; border-radius: 0%; background-color: rgba(145, 177, 204, 0.2); position: static; display: flex; flex-direction: column-reverse;
-                        justify-content: center; align-items: center; top: auto; right: auto; z-index: 0; padding: 4vw 0;}
+                .author {width: 100%; height: auto; border-radius: 0%; position: static; display: flex; flex-direction: column;
+                        justify-content: center; align-items: center; top: auto; left: auto; z-index: 0; padding: 4vw 0; margin: 5vw 0;
+                        background-image: linear-gradient(white 0%, white 10%, rgba(145, 177, 204, 0.2) 10.1%, rgba(145, 177, 204, 0.2) 100%);}
+                .agent {width: 100%; height: auto; border-radius: 0%; position: static; display: flex; flex-direction: column-reverse;
+                        justify-content: center; align-items: center; top: auto; right: auto; z-index: 0; padding: 4vw 0;
+                        background-image: linear-gradient(white 0%, white 10%, rgba(145, 177, 204, 0.2) 10.1%, rgba(145, 177, 204, 0.2) 100%);}
                     .headshot {text-align: center; font-family: "Raleway", sans-serif; font-size: 6vw; padding: 3vw 0;}
                         .author .headshot img {border-radius: 50%; height: 40vw; box-shadow: 2px 2px 10px white; margin: 0;}
                         .agent .headshot img {border-radius: 50%; height: 30vw; box-shadow: 2px 2px 10px white; margin: 0;}
@@ -162,8 +164,7 @@
                                               padding: 0; text-align: center; text-decoration: none;}
                         .agent .infocontact a, .author .infocontact a {text-decoration: none!important; color: black; text-align: center; padding: 4vw; 
                                                 background-color: rgba(255,255,255,0.5); border-radius: 10%; margin: 1vw 0; font-size: 4.5vw;}
-            
-            .socialtext {position: static; background-image: linear-gradient(#FFFCE6, white, #FFFCE6); margin: 20vw 0; padding: 2vw 0 7vw 0;}
+            .socialtext {position: static; background-image: linear-gradient(#FFFCE6, white, #FFFCE6); margin: 20vw 0; padding: 0 0 10vw 0;}
                 .socialtext .h2 {padding: 0;}
                 .socials {display: flex; flex-direction: column; justify-content: center; padding: 0;}
                     .socials .fa-instagram, .socials .fa-envelope, .socials .fa-tiktok {font-size: 15vw; padding: 3vw; text-align: center; text-decoration: none;
@@ -173,8 +174,8 @@
                           -moz-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; border-radius: 10%; vertical-align: middle;}
                     .socials a {text-decoration: none; color: black; font-family: "Share Tech Mono", sans-serif; font-size: 4.5vw; text-align: center; padding: 5vw 0;} 
             
-            .newsletter {          padding: 10vw 0 8vw 0; border: 0; margin: 0;}
-                .nlbox {width: 80%; position: static; display: flex; flex-direction: column; height: auto;     padding: 3vw 0 8vw 0; border: 0; background-color: white; margin: 0 auto; 
+            .newsletter {padding: 10vw 0 15vw 0; border: 0; margin: 0;}
+                .nlbox {width: 80%; position: static; display: flex; flex-direction: column; height: auto; padding: 0 0 8vw 0; border: 0; background-color: white; margin: 0 auto; 
                         align-items: center;}
                     .nltext {position: static; left: auto; top: auto; transform: translate(0,0); padding: 4vw; text-align: center; font-size: 5vw; font-weight: 700;}
                         .nltext ul {text-align: left; font-size: 4.5vw; font-weight: normal;}
@@ -192,8 +193,9 @@
             .footer {position: relative; display: flex; justify-content: space-around; align-items: center; border: 0; margin: 0; padding: 0; overflow: hidden}
                             .footerimg {width: 350%; text-align: center;}
             .footerflex {display: flex; position: absolute; justify-content: space-around; align-items: center; border: 0; margin: 0; padding: 0; overflow: hidden}
-                .footertext {color: white; font-family: "Raleway", sans-serif; font-size: 4.5vw; font-variant: small-caps; font-weight: 100; letter-spacing: 5px;
-                        text-shadow: -1px -1px 0 #a3a3a3, 1px -1px 0 #a3a3a3, -1px 1px 0 #a3a3a3, 1px 1px 0 #a3a3a3, 2px 2px 10px white; padding: 2vw;}
+                .footertext {color: white; font-family: "Raleway", sans-serif; font-size: 6vw; font-variant: small-caps; font-weight: 100; letter-spacing: 5px;
+                        text-shadow: -1px -1px 0 #a3a3a3, 1px -1px 0 #a3a3a3, -1px 1px 0 #a3a3a3, 1px 1px 0 #a3a3a3, 2px 2px 10px white; padding: 4vw; width: 50%;}
+                .contacts {display: flex; flex-direction: column; align-items: center; justify-content: center;}
                 .contacts .fa-instagram, .contacts .fa-envelope, .contacts .fa-tiktok {font-size: 4.5vw; padding: 2vw; text-align: center; text-decoration: none;
                           background: -moz-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%); 
                           background: -webkit-linear-gradient(top, #ae8625 0%, #f7ef8a 20%, #d2ac47 50%, #edc967 100%);
