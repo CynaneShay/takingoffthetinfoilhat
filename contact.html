@@ -27,13 +27,13 @@
                 .header img {width:100%; display: block; margin: 0 auto; padding: 0; border: 0;}
                 .headertext {position: absolute; bottom: 2px; text-align: center; width: 100%; border: 0; margin: 0; padding: 0;}
                     .title {font-family: "Raleway", sans-serif; font-size: 5.9vw; font-variant: small-caps; font-weight: 100; letter-spacing: 5px;
-                        border: 0; margin: 0; padding: 0; overflow: hidden;}
+                        border: 0; margin: 0; padding: 0;}
                     .inprog {font-family: "Raleway", sans-serif; font-size: 1.4vw; font-variant: small-caps; font-weight: 600; border: 0; margin: 0; padding: 0;}
             .menu { display: flex; flex-direction: row; justify-content: center; align-items: center; 
                     width: 100%; color: white; font-weight: 600; font-family: "Raleway", sans-serif; font-size: 2.3vw;
                     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; height: 4.4vw; letter-spacing: 2px;
                     background: linear-gradient(to bottom, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%);
-                    margin: 0; padding: 0; border: 0; font-variant: small-caps; overflow: hidden;}
+                    margin: 0; padding: 0; border: 0; font-variant: small-caps;}
                  .desktopmenu {display: flex; width: 50%; justify-content: space-around; border: 0; margin: 0; padding: 0;}
                     .desktopmenu a {text-decoration: none; color: white; border: 0; margin: 0; padding: 0;}
                     .desktopmenu a:hover {font-weight: 800;}
@@ -117,8 +117,8 @@
             .nav-container {position: absolute; top: 0; width: 100%; padding: 0; margin: 0; border: 0; z-index: 300; display: block; text-decoration: none;}
                 .nav-container .mobilemenu {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; position: fixed; top: 0; left: 0; 
                         width: 100%; height: 0vh; background: white; font-family: "Raleway", sans-serif; color: #91b1cc; overflow: hidden;
-                        margin: 0; padding: 0; border: 0; z-index: 900; text-decoration: none; font-size: 10vw; font-variant: small-caps; text-align: center;}
-                .nav-container.active .mobilemenu {height: 100%;}
+                        margin: 0; padding: 0; border: 0; z-index: 400; text-decoration: none; font-size: 10vw; font-variant: small-caps; text-align: center;}
+                .nav-container.active .mobilemenu {height: 100vh; text-decoration: none;}
                 .nav-container.active a {text-decoration: none!important; color: #91b1cc;}
                     .mobilemenu .menuopt {padding: 4vw 0; color: #91b1cc;}
                     .mobilemenu .menuopt, .mobilemenu a:link, .mobilemenu a:visited,  .mobilemenu a:hover,  .mobilemenu a:active  {text-decoration: none!important; color: #91b1cc;}
@@ -215,7 +215,6 @@
     </head>
 
     <body>
-        
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-circle-up fa-4x" style="color: rgba(255, 253, 239, 0.5);"></i></button>
         
         <div class="header">
@@ -253,8 +252,8 @@
       
         <div class="menu">
             <div class="desktopmenu"> 
-                <a href="http://www.takingoffthetinfoilhat.com">Home</a>
                 <a href="http://www.takingoffthetinfoilhat.com/about">About</a>
+                <a href="http://www.takingoffthetinfoilhat.com/contact">Contact</a>
                 <a href="http://www.takingoffthetinfoilhat.com/resources">Resources</a>
                 <a href="http://www.takingoffthetinfoilhat.com/blog">Blog</a>
             </div>
