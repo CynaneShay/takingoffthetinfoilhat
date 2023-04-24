@@ -117,8 +117,8 @@
             .nav-container {position: absolute; top: 0; width: 100%; padding: 0; margin: 0; border: 0; z-index: 300; display: block; text-decoration: none;}
                 .nav-container .mobilemenu {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; position: fixed; top: 0; left: 0; 
                         width: 100%; height: 0vh; background: white; font-family: "Raleway", sans-serif; color: #91b1cc; overflow: hidden;
-                        margin: 0; padding: 0; border: 0; z-index: 400; text-decoration: none; font-size: 10vw; font-variant: small-caps; text-align: center;}
-                .nav-container.active .mobilemenu {height: 100%; text-decoration: none;}
+                        margin: 0; padding: 0; border: 0; z-index: 900; text-decoration: none; font-size: 10vw; font-variant: small-caps; text-align: center;}
+                .nav-container.active .mobilemenu {height: 100%;}
                 .nav-container.active a {text-decoration: none!important; color: #91b1cc;}
                     .mobilemenu .menuopt {padding: 4vw 0; color: #91b1cc;}
                     .mobilemenu .menuopt, .mobilemenu a:link, .mobilemenu a:visited,  .mobilemenu a:hover,  .mobilemenu a:active  {text-decoration: none!important; color: #91b1cc;}
@@ -186,12 +186,12 @@
                         .nlnote {font-size: 3.5vw; font-weight: normal;}
                         .nltotfh {font-size: 4.6vw; font-weight: normal;}
                     .formdiv {padding: 8vw 8vw; position: static; left: auto; top: auto; transform: translate(0,0);}
-                        .formdiv input {height: 8vw; font-size: 4.2vw;      padding: .5vw;}
+                        .formdiv input {height: 8vw; font-size: 4.2vw; padding: .5vw; margin: 0 0 4vw 0;}
                             input:focus {}
                                 ::placeholder {}
                                 :-ms-input-placeholder {}
                                 ::-ms-input-placeholder {}
-                        .formdiv button {height: 12vw; font-size: 7vw;       padding: 1.2vw; }
+                        .formdiv button {height: 12vw; font-size: 7vw; padding: 1.2vw; }
                                 .formdiv button:hover {}
             
             .footer {position: relative; display: flex; justify-content: space-around; align-items: center; border: 0; margin: 0; padding: 0; overflow: hidden}
