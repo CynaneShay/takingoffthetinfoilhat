@@ -1,4 +1,4 @@
-if ($("body").data("title") === "home_page") {
+if ($("body#homepage").length > 0) {
 
     let mybutton = document.getElementById("myBtn");
     let slider=tns({container: ".my-slider",
