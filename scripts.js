@@ -1,4 +1,3 @@
-if ($("body#homepage").length > 0) {
 
     let mybutton = document.getElementById("myBtn");
     let slider=tns({container: ".my-slider",
@@ -65,4 +64,3 @@ if ($("body#homepage").length > 0) {
         navContainer.classList.toggle("active");
     })
 
-}
