@@ -50,16 +50,17 @@
                         margin: 0; padding: 0; border: 0; width: 100%; background-image: linear-gradient(#FFFDEF, white);}
                 .webintro p {width: 80%; margin: 0 auto; padding: 0; border: 0;}
                 .webintro span {font-weight: 600;}
-            .book_recs {width: 100%; margin: 0; padding: 1vw; display: flex; flex-direction: row; justify-content: center;
-                        background-image: linear-gradient(to top right, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%);}
-                .buttonbox {display: flex; flex-direction: column; font-size: 1.3vw; font-family: "Raleway", sans-serif; padding: 0 4vw; background-color: rgba(0,0,0,0);}
+            .book_recs {width: 100%; margin: 0; padding: 1vw; display: flex; flex-direction: row; justify-content: center;}
+                .buttonbox {display: flex; flex-direction: column; font-size: 1.3vw; font-family: "Raleway", sans-serif; padding: 0 4vw; 
+                            background-image: linear-gradient(to top right, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%);}
                     .buttonbox span {font-weight: 600;}
-                    .recbutton {margin: 1vw 0; padding: .5vw 0;}
-                .bookbox {display: flex; flex-direction: column; text-align: left; background-color: white; width: 50%; padding: 0; margin: 0; border: 0;}
-                    .book {display: flex; flex-direction: row; padding; 1vw 0;}
+                    .recbutton {margin: 1vw 0; padding: .5vw 0; background-color: rgba(255,255,255,.5); border-radius: 10%;}
+                .bookbox {display: flex; flex-direction: column; text-align: left; background-color: white; width: 50%; padding: 0 2vw; margin: 0; border: 0;
+                            border-image: linear-gradient(to top right, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%) 30;}
+                    .book {display: flex; flex-direction: row; padding; 2vw 0;}
                         .bookwords {display: flex; flex-direction: column; font-family: "Raleway", sans-serif;}
                             .bookwords .booktitle {font-size: 1.5vw; font-weight: 600; letter-spacing: 4px;}
-                            .bookwords .writer {font-size: 1.3vw;}
+                            .bookwords .writer {font-size: 1.3vw; padding: .2vw;}
             
         @media only screen and (max-width: 800px) {
             .header {position: relative; display: block; border: 0; margin: 0; padding: 0; overflow: hidden}
@@ -180,7 +181,11 @@
                          <div class="booktitle">Jesus and John Wayne</div>
                          <div class="writer">Kristin Kobez Du Mez</div>
                      </div>
-                     <div class="bookbutts"></div>
+                     <div class="bookbutts">
+                         <a href="http://www.takingoffthetinfoilhat.com/blog"><i class="fa fa-circle-info"></i></a>
+                         <a href="https://www.amazon.com/Love-Wins-About-Heaven-Person/dp/0062049658/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank">
+                                            <i class="fa fa-cart-shopping"></i></a>
+                     </div>
                  </div>
                 <div class="book whitecn fav">
                      <div class="bookimg"></div>
