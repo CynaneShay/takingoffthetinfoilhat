@@ -64,10 +64,10 @@
                 .bookbox {display: flex; flex-direction: column; text-align: left; background-color: white; width: 60%; padding: 0 2vw; margin: 0; 
                             <!-- border-image: linear-gradient(to top left, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%) 10; border-left: 0; --> 
                             border-image: repeating-linear-gradient(145deg, #ff0000, #ff9020 50%) 10; border-width: 0.5vw; border-style: solid;}
-                    .bookflex {display: flex; flex-direction: row; justify-content: start; align-items: center;}
-                    .book {display: flex; flex-direction: row; padding: 1.5vw 0; justify-content: space-between; width: 100%;}
+                    .bookflex {display: flex; flex-direction: row; flex-wrap: wrap; justify-content: start; align-items: center;}
+                    .book {display: flex; flex-direction: column; padding: 1.5vw 0; justify-content: space-between; width: 100%;}
                         .book i {font-size: 2.5vw; color: #f6edab; padding: 0 1vw;}
-                        .bookimg {width: 0%;}
+                        .bookimg {}
                         .bookwords {display: flex; flex-direction: column; text-align: left; font-family: "Raleway", sans-serif;}
                             .bookwords .booktitle {font-size: 1.5vw; font-weight: 600; letter-spacing: 4px;}
                             .bookwords .writer {font-size: 1.3vw; padding: .2vw;}
@@ -194,7 +194,7 @@
              <div class="bookbox">
                  <div class="book purityculture wchristiann fav">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/jesusandjohnwayne.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Jesus and John Wayne</div>
                              <div class="writer">Kristin Kobez Du Mez</div>
@@ -210,7 +210,7 @@
                  </div>
                 <div class="book whitecn fav">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/thecolorofcompromise.jpg">
                          <div class="bookwords">
                              <div class="booktitle">The Color of Compromise</div>
                              <div class="writer">Jemar Tisby</div>
@@ -226,7 +226,7 @@
                  </div>
                  <div class="book whitecn">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/dividedbyfaith.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Divided by Faith</div>
                              <div class="writer">Michael O. Emerson</div>
@@ -241,7 +241,7 @@
                  </div>
                  <div class="book cults wcnationalism">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/theoriginsoftotalitarianism.jpg">
                          <div class="bookwords">
                              <div class="booktitle">The Origins of Totalitarianism</div>
                              <div class="writer">Hannah Arendt</div>
@@ -256,7 +256,7 @@
                  </div>
                  <div class="book wcnationalism">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/thecultoftheconstitution.jpg">
                          <div class="bookwords">
                              <div class="booktitle">The Cult of the Constitution</div>
                              <div class="writer">Mary Anne Franks</div>
@@ -271,7 +271,7 @@
                  </div>
                  <div class="book conspiracy">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/thestormisuponus.jpg">
                          <div class="bookwords">
                              <div class="booktitle">The Storm is Upon Us</div>
                              <div class="writer">Mike Rothschild</div>
@@ -286,7 +286,7 @@
                  </div>
                  <div class="book wchristiann">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/theimmoralmajority.jpg">
                          <div class="bookwords">
                              <div class="booktitle">The Immoral Majority</div>
                              <div class="writer">Ben Howe</div>
@@ -301,7 +301,7 @@
                  </div>
                  <div class="book conspiracy">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/suspiciousminds.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Suspicious Minds</div>
                              <div class="writer">Rob Brotherton</div>
@@ -316,7 +316,7 @@
                  </div>
                  <div class="book wchristiann purityculture">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/stillchristian.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Still Christian</div>
                              <div class="writer">David P. Gushee</div>
@@ -331,7 +331,7 @@
                  </div>
                  <div class="book wcnationalism">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/whatispopulism.jpg">
                          <div class="bookwords">
                              <div class="booktitle">What is Populism?</div>
                              <div class="writer">Jan-Werner Müller</div>
@@ -346,7 +346,7 @@
                  </div>
                  <div class="book wcnationalism fav">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/theanatomyoffascism.jpg">
                          <div class="bookwords">
                              <div class="booktitle">The Anatomy of Fascism</div>
                              <div class="writer">Robert Paxton</div>
@@ -362,7 +362,7 @@
                  </div>
                  <div class="book conspiracy">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/americanconspiracytheories.jpg">
                          <div class="bookwords">
                              <div class="booktitle">American Conspiracy Theories</div>
                              <div class="writer">Joseph Parent & Joseph Uscinski</div>
@@ -377,7 +377,7 @@
                  </div>
                  <div class="book philtheo fav">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/kierkegaard.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Kierkegaard</div>
                              <div class="writer">Stephen Backhouse</div>
@@ -393,7 +393,7 @@
                  </div>
                  <div class="book wcnationalism conspiracy">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/theparanoidstyleinamericanpolitics.jpg">
                          <div class="bookwords">
                              <div class="booktitle">The Paranoid Style in American Politics</div>
                              <div class="writer">Richard Hofstadter</div>
@@ -408,7 +408,7 @@
                  </div>
                  <div class="book philtheo hell">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/thatallshallbesaved.jpg">
                          <div class="bookwords">
                              <div class="booktitle">That All Shall Be Saved</div>
                              <div class="writer">David Bentley Hart</div>
@@ -423,7 +423,7 @@
                  </div>
                  <div class="book whitecn philtheo">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/thecrossandthelynchingtree.jpg">
                          <div class="bookwords">
                              <div class="booktitle">The Cross and the Lynching Tree</div>
                              <div class="writer">James H. Cone</div>
@@ -438,7 +438,7 @@
                  </div>
                  <div class="book cults">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/cultish.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Cultish</div>
                              <div class="writer">Amanda Montell</div>
@@ -453,7 +453,7 @@
                  </div>
                  <div class="book wcnationalism">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/thefoundingmyth.jpg">
                          <div class="bookwords">
                              <div class="booktitle">The Founding Myth</div>
                              <div class="writer">Andrew Seidel</div>
@@ -468,7 +468,7 @@
                  </div>
                  <div class="book whitecn">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/theflagandthecross.jpg">
                          <div class="bookwords">
                              <div class="booktitle">The Flag and the Cross</div>
                              <div class="writer">Samuel L. Perry & Philip Gorski</div>
@@ -483,7 +483,7 @@
                  </div>
                  <div class="book memoir">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/faithunraveled.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Faith Unraveled</div>
                              <div class="writer">Rachel Held Evans</div>
@@ -498,7 +498,7 @@
                  </div>
                  <div class="book philtheo">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/thesinofcertainty.jpg">
                          <div class="bookwords">
                              <div class="booktitle">The Sin of Certainty</div>
                              <div class="writer">Peter Enns</div>
@@ -513,7 +513,7 @@
                  </div>
                  <div class="book memoir">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/outofsorts.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Out of Sorts</div>
                              <div class="writer">Sarah Bessey</div>
@@ -528,7 +528,7 @@
                  </div>
                  <div class="book whitecn fav wchristiann">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/whiteevangelicalracism.jpeg">
                          <div class="bookwords">
                              <div class="booktitle">White Evangelical Racism</div>
                              <div class="writer">Anthea Butler</div>
@@ -544,7 +544,7 @@
                  </div>
                  <div class="book purityculture">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/churchtoo.jpg">
                          <div class="bookwords">
                              <div class="booktitle">#ChurchToo</div>
                              <div class="writer">Emily Joy Allison</div>
@@ -559,7 +559,7 @@
                  </div>
                  <div class="book whitecn">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/whitechristianprivilege.jpg">
                          <div class="bookwords">
                              <div class="booktitle">White Christian Privilege</div>
                              <div class="writer">Khyati Joshi</div>
@@ -574,7 +574,7 @@
                  </div>
                  <div class="book wcnationalism">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/antiintellectualisminamericanlife.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Anti-Intellectualism in American Life</div>
                              <div class="writer">Richard Hofstadter</div>
@@ -589,7 +589,7 @@
                  </div>
                  <div class="book philtheo whitecn">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/sistersinthewilderness.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Sisters in the Wilderness</div>
                              <div class="writer">Delores Williams</div>
@@ -604,7 +604,7 @@
                  </div>
                  <div class="book memoir">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/acuriousfaith.jpg">
                          <div class="bookwords">
                              <div class="booktitle">A Curious Faith</div>
                              <div class="writer">Lore Wilbert</div>
@@ -619,7 +619,7 @@
                  </div>
                  <div class="book cults fav">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/cultsinourmidst.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Cults in Our Midst</div>
                              <div class="writer">Margaret Thaler Singer</div>
@@ -635,7 +635,7 @@
                  </div>
                  <div class="book cults">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/combatingcultmindcontrol.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Combating Cult Mind Control</div>
                              <div class="writer">Steven Hasan</div>
@@ -650,7 +650,7 @@
                  </div>
                 <div class="book cults">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/takebackyourlife.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Take Back Your Life</div>
                              <div class="writer">Janja Lalich & Madeleine Tobias</div>
@@ -665,7 +665,7 @@
                  </div>
                  <div class="book philtheo">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/thegoddelusion.jpg">
                          <div class="bookwords">
                              <div class="booktitle">The God Delusion</div>
                              <div class="writer">Richard Dawkins</div>
@@ -680,7 +680,7 @@
                  </div>
                  <div class="book philtheo">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/lovewins.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Love Wins</div>
                              <div class="writer">Rob Bell</div>
@@ -695,7 +695,7 @@
                  </div>
                  <div class="book fav philtheo hell">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/howthebibleactuallyworks.jpg">
                          <div class="bookwords">
                              <div class="booktitle">How the Bible Actually Works</div>
                              <div class="writer">Peter Enns</div>
@@ -711,7 +711,7 @@
                  </div>
                  <div class="book whitecn">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/nativeson.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Native Son</div>
                              <div class="writer">Richard Wright</div>
@@ -726,7 +726,7 @@
                  </div>
                  <div class="book cults fav">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/thoughreformandthepsychologyoftotalism.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Thought Reform and the Psychology of Totalism</div>
                              <div class="writer">Robert Jay Lifton</div>
@@ -742,7 +742,7 @@
                  </div>
                  <div class="book wchristiann">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/shadownetwork.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Shadow Network</div>
                              <div class="writer">Anne Nelson</div>
@@ -757,7 +757,7 @@
                  </div>
                  <div class="book hell tbr">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/changingourmind.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Changing Our Mind</div>
                              <div class="writer">David P. Gushee</div>
@@ -772,7 +772,7 @@
                  </div>
                  <div class="book philtheo tbr">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/lettersandpapersfromprison.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Letters and Papers from Prison</div>
                              <div class="writer">Dietrich Bonhoeffer</div>
@@ -787,7 +787,7 @@
                  </div>
                  <div class="book philtheo tbr">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/thecostofdiscipleship.jpg">
                          <div class="bookwords">
                              <div class="booktitle">The Cost of Discipleship</div>
                              <div class="writer">Dietrich Bonhoeffer</div>
@@ -802,7 +802,7 @@
                  </div>
                  <div class="book philtheo tbr">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/forselfexamination.jpg">
                          <div class="bookwords">
                              <div class="booktitle">For Self Examination</div>
                              <div class="writer">Søren Kierkegaard</div>
@@ -817,7 +817,7 @@
                  </div>
                  <div class="book philtheo tbr">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/fearandtrembling.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Fear and Trembling</div>
                              <div class="writer">Søren Kierkegaard</div>
@@ -832,7 +832,7 @@
                  </div>
                  <div class="book philtheo tbr">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/thepapersofmartinlutherkingjr.jpg">
                          <div class="bookwords">
                              <div class="booktitle">The Papers of Martin Luther King Jr.</div>
                              <div class="writer">Martin Luther King Jr.</div>
@@ -847,7 +847,7 @@
                  </div>
                  <div class="book wchristiann tbr">
                      <div class="bookflex">
-                         <div class="bookimg"></div>
+                         <img class="bookimg" src="books/preparingforwar.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Preparing for War</div>
                              <div class="writer">Bradley Onishi</div>
