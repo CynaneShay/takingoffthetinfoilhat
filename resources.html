@@ -59,13 +59,13 @@
                 .buttonbox {display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 2vw; font-family: "Raleway", sans-serif; padding: 1vw 3vw; 
                             background-image: linear-gradient(to top right, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%); height: 200vh;}
                     .buttonbox p {color: #ae8625; font-weight: 600;}
-                    .recbutton {margin: 1vw 0; padding: .5vw; background-color: rgba(255,255,255,.2); border-radius: 25px; text-align: center; color: white;
-                                width: 100%; font-weight: 400; font-variant: small-caps; text-shadow: -1px -1px 0 #ae8625, 1px -1px 0 #ae8625, -1px 1px 0 #ae8625, 1px 1px 0 #ae8625;}
-                        .recbutton span {font-weight: 600;}
+                    .recbutton {margin: 1vw 0; padding: .5vw; background-color: rgba(255,255,255,.2); border-radius: 25px; text-align: center; color: white; letter-spacing: 1px;
+                                width: 100%; font-weight: 600; font-variant: small-caps; text-shadow: -1px -1px 0 #ae8625, 1px -1px 0 #ae8625, -1px 1px 0 #ae8625, 1px 1px 0 #ae8625;}
+                        .recbutton span {font-weight: 800;}
                 .bookbox {display: flex; flex-direction: row; flex-wrap: wrap; text-align: left; background-color: white; width: 60%; padding: 0 2vw; margin: 0; 
                             <!-- border-image: linear-gradient(to top left, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%) 10; border-left: 0; --> 
                             border-image: repeating-linear-gradient(45deg, #ff0000, #ff9020 50%); border-width: 0.5vw; border-style: solid;}
-                    .bookflex {display: flex; flex-direction: column; justify-content: start; align-items: center;}
+                    .bookflex {display: flex; flex-direction: column; justify-content: start; align-items: center; text-decoration: none;}
                     .book {display: flex; flex-direction: column; padding: 2.5vw; justify-content: space-between; width: 13.2vw;}
                         .book i {font-size: 2.5vw; color: #f6edab; padding: 0 1vw;}
                         .bookimg {height: 18vw; width: 13.2vw; object-fit: cover; padding: 0 0 .2vw 0;}
@@ -74,9 +74,9 @@
                             .bookwords .writer {font-size: 1.3vw; padding: .2vw; font-style: italic;}
                         .bookbutts {display: flex; flex-direction: column; justify-content: center; align-items: center;}
                             .bookbutts .favcircle {border-radius: 50%; background-color: rgba(145, 177, 204, 1); color: white; font-size: 1vw; text-align: center; 
-                                                    padding: 1vw;}
-                            .bookbutts i {font-size: 2.5vw; background-color: rgba(145, 177, 204, 0.2); color: white; border-radius: 50%; padding: 0 1vw;}
-                            .bookbutts .fa-h {font-size: 1.5vw; color: white; background-color: rgba(145, 177, 204, 0.2); border-radius: 50%; padding: .8vw;}
+                                                    padding: 1vw; height: 3vw; width: 3vw; font-family: "Raleway", sans-serif; font-variant: small-caps;}
+                            .bookbutts i {font-size: 2.5vw; background-color: rgba(145, 177, 204, 0.2); color: white; border-radius: 50%; padding: .5vw; height: 1.5vw; width: 1.5vw;}
+                            .bookbutts .fa-h {font-size: 1.5vw; color: white; background-color: rgba(145, 177, 204, 0.2); border-radius: 50%; padding: .5vw; height: 1.5vw; width: 1.5vw;}
             
         @media only screen and (max-width: 800px) {
             .header {position: relative; display: block; border: 0; margin: 0; padding: 0; overflow: hidden}
@@ -202,6 +202,8 @@
                          <div class="bookwords">
                              <div class="booktitle">Jesus and John Wayne</div>
                              <div class="writer">Kristin Kobez Du Mez</div>
+                             <div class="synopsis">Toxic masculinity, purity culture, evangelical politicization"</div>
+                             <div class="readmore">read more ></div>
                          </div>
                      </a>
                      <div class="bookbutts">
