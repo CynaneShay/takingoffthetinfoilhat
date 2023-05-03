@@ -56,8 +56,9 @@
                 .readingintro span {font-weight: 600;}
             .readingintro a {text-decoration: none;}
             .book_recs {width: 100%; margin: 0; padding: 1vw; display: flex; flex-direction: row; justify-content: center;}
-                .buttonbox {display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 1.3vw; font-family: "Raleway", sans-serif; padding: 1vw 3vw; 
-                            background-image: linear-gradient(to top right, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%); height: 120vh; font-weight: 500;}
+                .buttonbox {display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 2vw; font-family: "Raleway", sans-serif; padding: 1vw 3vw; 
+                            background-image: linear-gradient(to top right, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%); height: 200vh;}
+                    .buttonbox p {color: #ae8625; font-weight: 600;}
                     .recbutton {margin: 1vw 0; padding: .5vw; background-color: rgba(255,255,255,.2); border-radius: 25px; text-align: center; color: white;
                                 width: 100%; font-weight: 400; font-variant: small-caps; text-shadow: -1px -1px 0 #ae8625, 1px -1px 0 #ae8625, -1px 1px 0 #ae8625, 1px 1px 0 #ae8625;}
                         .recbutton span {font-weight: 600;}
@@ -71,8 +72,10 @@
                         .bookwords {display: flex; flex-direction: column; text-align: left; font-family: "Raleway", sans-serif;}
                             .bookwords .booktitle {font-size: 1.5vw; font-weight: 600; letter-spacing: 4px; padding: 0 0 0 .05vw;}
                             .bookwords .writer {font-size: 1.3vw; padding: .2vw; font-style: italic;}
-                        .bookbutts {align-items: center;}
-                            .bookbutts i {font-size: 2.5vw; color: rgba(145, 177, 204, 0.2); padding: 0 1vw;}
+                        .bookbutts {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+                            .bookbutts .favcircle {border-radius: 50%; background-color: rgba(145, 177, 204, 1); color: white; font-size: 1vw; text-align: center; 
+                                                    padding: 1vw;}
+                            .bookbutts i {font-size: 2.5vw; background-color: rgba(145, 177, 204, 0.2); color: white; border-radius: 50%; padding: 0 1vw;}
                             .bookbutts .fa-h {font-size: 1.5vw; color: white; background-color: rgba(145, 177, 204, 0.2); border-radius: 50%; padding: .8vw;}
             
         @media only screen and (max-width: 800px) {
@@ -178,6 +181,7 @@
          </p></div>
          <section class="book_recs">
              <div class="buttonbox">
+                 <p>Filters:</p>
                  <div class="recbutton">Cynane's Top Picks</div>
                  <div class="recbutton"><span>White</span> Evangelical Nationalism</div>
                  <div class="recbutton">White <span>Evangelical</span> Nationalism</div>
@@ -193,16 +197,15 @@
              </div>
              <div class="bookbox">
                  <div class="book purityculture wchristiann fav">
-                     <div class="bookflex">
+                     <a class="bookflex" href="http://www.takingoffthetinfoilhat.com/blog">
                          <img class="bookimg" src="books/jesusandjohnwayne.jpg">
                          <div class="bookwords">
                              <div class="booktitle">Jesus and John Wayne</div>
                              <div class="writer">Kristin Kobez Du Mez</div>
                          </div>
-                         <i class="fa-solid fa-star"></i>
-                     </div>
+                     </a>
                      <div class="bookbutts">
-                         <a href="http://www.takingoffthetinfoilhat.com/blog"><i class="fa fa-circle-info"></i></a>
+                         <div class="favcircle">Top Pick</div>
                          <a href="https://www.hoopladigital.com/title/13341314" target="_blank"><i class="fa-solid fa-h"></i></a>
                          <a href="https://www.amazon.com/Jesus-John-Wayne-Evangelicals-Corrupted/dp/163149905X/ref=monarch_sidesheet" target="_blank">
                                             <i class="fa fa-cart-shopping"></i></a>
