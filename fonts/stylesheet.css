@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'sundayapril';
-    src: url('https://github.com/CynaneShay/takingoffthetinfoilhat/tree/main/fonts/sunday_april-webfont.woff2') format('woff2'),
-         url('https://github.com/CynaneShay/takingoffthetinfoilhat/tree/main/fonts/sunday_april-webfont.woff') format('woff');
+    font-family: "sundayapril";
+    src: url("https://github.com/CynaneShay/takingoffthetinfoilhat/tree/main/fonts/sunday_april-webfont.woff2") format("woff2"),
+         url("https://github.com/CynaneShay/takingoffthetinfoilhat/tree/main/fonts/sunday_april-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 
