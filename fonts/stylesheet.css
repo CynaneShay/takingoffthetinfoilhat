@@ -1,7 +1,7 @@
 @font-face {
-font-family: "CustomFont";
-src: url("sunday_april-webfont.eot");
-src: url("sunday_april-webfont.woff") format("woff"),
-url("sunday_april-webfont.otf") format("opentype"),
-url("sunday_april-webfont.svg#filename") format("svg");
+font-family: "sundayapril";
+src: url("https://github.com/CynaneShay/takingoffthetinfoilhat/tree/main/fonts/sunday_april-webfont.eot");
+src: url("https://github.com/CynaneShay/takingoffthetinfoilhat/tree/main/fonts/sunday_april-webfont.woff") format("woff"),
+url("https://github.com/CynaneShay/takingoffthetinfoilhat/tree/main/fonts/sunday_april-webfont.otf") format("opentype"),
+url("https://github.com/CynaneShay/takingoffthetinfoilhat/tree/main/fonts/sunday_april-webfont.svg#filename") format("svg");
 }
