@@ -65,7 +65,7 @@
     })
 
 
-// filterSelection("all")
+filterSelection("fav")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("book");
