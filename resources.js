@@ -1,22 +1,29 @@
 
-filterSelection("fav")    
-
 let mybutton = document.getElementById("myBtn");
-    let slider=tns({container: ".my-slider",
-                   "SlideBy": 1,
-                   "speed": 400,
-                   "nav": false,
-                   controlsContainer: "#controls",
-                   prevButton: ".previous",
-                   nextButton: ".next",
-                   responsive: {1600: {items: 5, gutter: 5},
-                               1024: {items: 5, gutter: 5},
-                               768: {items: 3, gutter: 5},
-                               480: {items: 3, gutter: 5}}
-                   });
+const menuIconContainer = document.querySelector(".nav-container .menu-icon-container");
+const navContainer = document.querySelector(".nav-container");
+var btns = document.getElementsByClassName("recbutton");
+let slider=tns({container: ".my-slider",
+               "SlideBy": 1,
+               "speed": 400,
+               "nav": false,
+               controlsContainer: "#controls",
+               prevButton: ".previous",
+               nextButton: ".next",
+               responsive: {1600: {items: 5, gutter: 5},
+                           1024: {items: 5, gutter: 5},
+                           768: {items: 3, gutter: 5},
+                           480: {items: 3, gutter: 5}}
+               });
 
     window.onscroll = function() {scrollFunction()};
+    
+    filterSelection("fav")    
 
+
+    menuIconContainer.addEventListener("click", () => {
+        navContainer.classList.toggle("active");
+    })
 
     function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -61,11 +68,7 @@ let mybutton = document.getElementById("myBtn");
       x.querySelector('.fa-cart-shopping').style.opacity= "0"; 
     }
 
-    const menuIconContainer = document.querySelector(".nav-container .menu-icon-container")
-    const navContainer = document.querySelector(".nav-container")
-    menuIconContainer.addEventListener("click", () => {
-        navContainer.classList.toggle("active");
-    })
+
 
 
 function filterSelection(c) {
@@ -105,7 +108,6 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current control button (highlight it)
-var btns = document.getElementsByClassName("recbutton");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
     var current = document.getElementsByClassName("act");
