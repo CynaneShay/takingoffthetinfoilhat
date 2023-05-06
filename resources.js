@@ -1,5 +1,7 @@
 
-    let mybutton = document.getElementById("myBtn");
+filterSelection("fav")    
+
+let mybutton = document.getElementById("myBtn");
     let slider=tns({container: ".my-slider",
                    "SlideBy": 1,
                    "speed": 400,
@@ -14,6 +16,7 @@
                    });
 
     window.onscroll = function() {scrollFunction()};
+
 
     function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -65,7 +68,6 @@
     })
 
 
-filterSelection("fav")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("book");
@@ -107,8 +109,8 @@ var btnContainer = document.getElementById("buttonbox");
 var btns = btnContainer.getElementsByClassName("recbutton");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    var current = document.getElementsByClassName("act");
+    current[0].className = current[0].className.replace(" act", "");
+    this.className += " act";
   });
 }
