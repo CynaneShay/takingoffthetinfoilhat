@@ -106,7 +106,7 @@ function w3RemoveClass(element, name) {
 
 // Add active class to the current control button (highlight it)
 var btnContainer = document.getElementById("buttonbox");
-var btns = btnContainer.getElementsByClassName("recbutton");
+var btns = document.getElementsByClassName("recbutton");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
     var current = document.getElementsByClassName("act");
