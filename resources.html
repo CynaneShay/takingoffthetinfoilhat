@@ -102,11 +102,12 @@
                         .recbutton.act {border: solid .2vw white;}
                         .recbutton:hover {border: solid .2vw white;}
             
-            #slider {height: 22vw; display: flex; justify-content: center; align-items: center; margin: 5vw 0 5vw 0; padding: 0; border: 0;}
+            #slider {height: 22vw; display: flex; justify-content: center; align-items: center; margin: 1vw 0 5vw 0; padding: 0; border-top: solid 3vw rgba(145, 177, 204, .5); 
+                    border-bottom: solid 3vw rgba(145, 177, 204, .5); border-left: 0; border-right: 0; width: 99.9%;}
                 .container {width: 99.9%;}
                 .subcontainer {width: 100%; margin: auto;}
                 .slider-wrapper {width: 100%; position: relative; align-items: center;}
-                .controller {width: 100%; position: absolute; z-index: 3; top: 90%;}
+                .controller {width: 100%; position: absolute; z-index: 3000; top: 90%;}
                     #controls {width: 90%; display: flex; justify-content: space-between; margin: 0 auto;}
                         #controls i {width: 100%; color: white; font-size: 3vw;}
                     .previous, .next {padding: 0.5vw; width: 5vw; cursor: pointer; border-radius: 50%; outline: none; transition: 0.7s ease-in-out;
@@ -116,6 +117,10 @@
                 .slide {position: relative; height: 22vw; margin: 0 auto; align-items: center; justify-content: center;}
                     .slideimg {height: 22vw; position: absolute; margin: 0 auto; left: 50%; transform: translate(-50%,0); z-index: 1;}
                     .fog {height: 100%; width: 100%; transition: 0.5s; position: absolute; z-index: 2;}
+                    .podname {position: absolute; width: 80%; font-family: "Raleway", sans-serif; font-variant: small-caps; font-size: 1.5vw; color: black;
+                                top: 0; left: 50%; transform: translate(0,-50%);}
+                    .podepisode {position: absolute; width: 80%; font-family: "Raleway", sans-serif; font-size: 1.3vw; color: black;
+                                bottom: 0; left: 50%; transform: translate(0,-50%);}
                     .fa-headphones {position: absolute; left: 50%; transform: translate(-50%,-50%); top: 50%; transition: 0.5s; opacity: 0;
                                      font-size: 3vw; color: rgba(145, 177, 204, 1); padding: 0; border: 0; margin: 0; z-index: 4;}
             
@@ -1024,28 +1029,44 @@
                                     <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
                                         <img class="slideimg" src="SpeakingInChurch.jpg">
                                         <div class="fog"></div>
-                                        <a href=href="https://podcasts.apple.com/us/podcast/89-taking-off-the-tin-foil-hat-with-cynane/id1531965047?i=1000589292947" target="_blank"><i class="fa-solid fa-headphones"></i></a>
+                                        <a href=href="https://podcasts.apple.com/us/podcast/89-taking-off-the-tin-foil-hat-with-cynane/id1531965047?i=1000589292947" target="_blank">
+                                            <p class="podname">Speaking In Church</p>
+                                            <i class="fa-solid fa-headphones"></i>
+                                            <p class="podepisode">Episode 89: Taking Off the Tin Foil Hat with Cynane</p>
+                                        </a>
                                     </div>
                                 </div> 
                                 <div>
                                     <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
                                         <img class="slideimg" src="NutsAndBoltsOfWriting.jpg">
                                         <div class="fog"></div>
-                                        <a href="https://podcasts.apple.com/us/podcast/ep-188-interview-with-cynane-shay-author-of-taking/id1526996233?i=1000600454554" target="_blank"><i class="fa-solid fa-headphones"></i></a>
+                                        <a href="https://podcasts.apple.com/us/podcast/ep-188-interview-with-cynane-shay-author-of-taking/id1526996233?i=1000600454554" target="_blank">
+                                            <p class="podname">The Nuts and Bolts of Writing</p>
+                                            <i class="fa-solid fa-headphones"></i>
+                                            <p class="podepisode">Episode 188: Interview with Cynane Shay</p>
+                                        </a>
                                     </div>
                                 </div>  
                                 <div>
                                     <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
                                         <img class="slideimg" src="CheersToLeaving.jpg">
                                         <div class="fog"></div>
-                                        <a  href="https://podcasts.apple.com/us/podcast/ep-55-taking-off-the-tin-foil-hat-part-1/id1568302029?i=1000604485571" target="_blank"><i class="fa-solid fa-headphones"></i></a>
+                                        <a  href="https://podcasts.apple.com/us/podcast/ep-55-taking-off-the-tin-foil-hat-part-1/id1568302029?i=1000604485571" target="_blank">
+                                            <p class="podname">Cheers to Leaving!</p>
+                                            <i class="fa-solid fa-headphones"></i>
+                                            <p class="podepisode">Episode 55 & 56: Taking Off the Tinfoil Hat (Two Parts!)</p>
+                                        </a>
                                     </div>
                                 </div>  
                                 <div>
                                     <div class="slide" onmouseenter="carouselin(this)" onmouseleave="carouselout(this)">
                                         <img class="slideimg" src="SpeakingUp.jpg">
                                         <div class="fog"></div>
-                                        <a  href="https://podcasts.apple.com/us/podcast/speaking-up-with-andrew-pledger/id1620395336" target="_blank"><i class="fa-solid fa-headphones"></i></a>
+                                        <a  href="https://podcasts.apple.com/us/podcast/speaking-up-with-andrew-pledger/id1620395336" target="_blank">
+                                            <p class="podname">Speaking Up with Andrew Pledger</p>
+                                            <i class="fa-solid fa-headphones"></i>
+                                            <p class="podepisode">Coming Soon!</p>
+                                        </a>
                                     </div>
                                 </div>  
                             </div>
