@@ -48,11 +48,15 @@ window.onscroll = function() {scrollFunction()};
     function carouselin(x) {
       x.querySelector('.fog').style.boxShadow= "0 0 0 200px rgba(255,255,255,.9) inset";
       x.querySelector('.fa-headphones').style.opacity= "1"; 
+      x.querySelector('.podname').style.opacity= "1";
+      x.querySelector('.podepisode').style.opacity= "1";
     }
 
     function carouselout(x) {
       x.querySelector('.fog').style.boxShadow= "none";
-      x.querySelector('.fa-headphones').style.opacity= "0";  
+      x.querySelector('.fa-headphones').style.opacity= "0";
+      x.querySelector('.podname').style.opacity= "0";
+      x.querySelector('.podepisode').style.opacity= "0";
     }
 
 
