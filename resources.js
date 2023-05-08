@@ -116,7 +116,7 @@ let slider=tns({container: ".my-slider",
                controlsContainer: "#controls",
                prevButton: ".previous",
                nextButton: ".next",
-               responsive: {1600: {items: 3, gutter: 5},
+               responsive: {1600: {items: 4, gutter: 5},
                            1024: {items: 3, gutter: 5},
                            768: {items: 3, gutter: 5},
                            480: {items: 2, gutter: 5}}
