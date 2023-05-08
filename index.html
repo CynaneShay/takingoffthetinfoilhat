@@ -93,14 +93,14 @@
             #slider {height: 22vw; display: flex; justify-content: center; align-items: center; padding: 0 0 5vw 0; width: 100%;}
                 .container {width:100%;}
                 .subcontainer {width: 100%; margin: auto;}
-                .slider-wrapper {width: 100%; position: relative; align-items: center; height: 22vw;}
+                .slider-wrapper {width: 100%; position: relative; align-items: center; height: 22vw; overflow: hidden;}
                 .controller {width: 100%; position: absolute; z-index: 3; top: 20vw;}
                     #controls {width: 95%; display: flex; justify-content: space-between; margin: 0 auto;}
                         #controls i {width: 100%; color: white; font-size: 3vw;}
                     .previous, .next {padding: 0.5vw; width: 5vw; cursor: pointer; border-radius: 50%; outline: none; transition: 0.7s ease-in-out;
                                    background-color: rgba(145, 177, 204, 0.7); border: 0;}
                         .previous:hover, .next:hover {background-color: rgba(145, 177, 204, 1);}
-                .my-slider {width: 75vw; position: absolute; top: 0; margin: 0 auto;}
+                .my-slider {width: 75vw; position: absolute; top: 0; margin: 0 auto; overflow: hidden;}
                 .slide {position: relative; height: 22vw; margin: 0 auto; align-items: center; justify-content: center;}
                     .slideimg {height: 22vw; position: absolute; margin: 0 auto; left: 50%; transform: translate(-50%,0); z-index: 1;}
                     .fog {height: 100%; width: 100%; transition: 0.5s; position: absolute; z-index: 2;}
