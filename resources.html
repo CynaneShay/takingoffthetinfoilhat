@@ -102,11 +102,13 @@
                         .recbutton.act {border: solid .2vw white;}
                         .recbutton:hover {border: solid .2vw white;}
             
-           #slider {height: 25vw; display: flex; justify-content: center; align-items: center; padding: 0 0 5vw 0; width: 100%;}
+           #slider {height: 27vw; display: flex; justify-content: center; align-items: center; padding: 0 0 5vw 0; width: 100%;
+                    background-color: #FFFDEF; border-top: 2.5vw solid; border-bottom: 2.5vw solid; border-left: 0; border-right: 0;
+                    border-image:  linear-gradient(to bottom, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%);}
                 .container {width:100%;}
                 .subcontainer {width: 100%; margin: auto;}
-                .slider-wrapper {width: 100%; position: relative; align-items: center; height: 25vw; overflow: hidden;}
-                .controller {width: 100%; position: absolute; z-index: 3; top: 20vw;}
+                .slider-wrapper {width: 100%; position: relative; align-items: center; height: 27vw; overflow: hidden;}
+                .controller {width: 100%; position: absolute; z-index: 3; top: 22vw;}
                     #controls {width: 95%; display: flex; justify-content: space-between; margin: 0 auto;}
                         #controls i {width: 100%; color: white; font-size: 3vw;}
                     .previous, .next {padding: 0.5vw; width: 5vw; cursor: pointer; border-radius: 50%; outline: none; transition: 0.7s ease-in-out;
@@ -116,10 +118,10 @@
                 .slide {position: relative; height: 22vw; margin: 0 auto; align-items: center; justify-content: center;}
                     .slideimg {height: 22vw; position: absolute; margin: 0 auto; left: 50%; transform: translate(-50%,0); z-index: 1;}
                     .fog {height: 100%; width: 100%; transition: 0.5s; position: absolute; z-index: 2;}
-                    .podname {position: absolute; width: 80%; font-family: "Raleway", sans-serif; font-variant: small-caps; font-size: 1.8vw; 
+                    .podname {position: absolute; width: 18vw; font-family: "Raleway", sans-serif; font-variant: small-caps; font-size: 1.8vw; 
                                 color: #8BAAC3; font-weight: 600; text-align: center;
                                 top: 0; left: 50%; transform: translate(-50%,50%);  padding: 0; border: 0; margin: 0; z-index: 4; opacity: 0; transition: 0.5s;}
-                    .podepisode {position: absolute; width: 80%; font-family: "Raleway", sans-serif; font-size: 1.3vw; 
+                    .podepisode {position: absolute; width: 18vw; font-family: "Raleway", sans-serif; font-size: 1.3vw; 
                                 color: #8BAAC3; transition: 0.5s; text-align: center;
                                 bottom: 0; left: 50%; transform: translate(-50%,-50%);  padding: 0; border: 0; margin: 0; z-index: 4; opacity: 0;}
                     .fa-headphones {position: absolute; left: 50%; transform: translate(-50%,-50%); top: 50%; transition: 0.5s; opacity: 0;
