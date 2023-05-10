@@ -96,16 +96,14 @@
                             .bookbutts i {font-size: 1.5vw; background-color: rgba(145, 177, 204, 1); color: white; border-radius: 50%; padding: 0; border: 0; margin: .5vw; height: 3.8vw; width: 3.8vw; 
                                             text-align: center; display: flex; align-items: center; justify-content: center;}
                             .bookbutts i:hover {background-color: rgba(145, 177, 204, .8); font-weight: bold;}
-                        
                         .bookbox .tbr a {color: #B6B6B6;}
                         .show {display: flex;}
                         .recbutton.act {border: solid .2vw white;}
                         .recbutton:hover {border: solid .2vw white;}
             
            #slider {height: 23vw; display: flex; justify-content: center; align-items: center; padding: 0; width: 100%;
-                    border: 2.5vw solid white; overflow: hidden; margin: 5vw 0; overflow: hidden;
-                    border-image: linear-gradient(to bottom, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%) 30/ 2.5vw 0 2.5vw 0; }
-                .container {width:100%;}
+                    border: 2.5vw solid rgba(145, 177, 204, 0.5); overflow: hidden; margin: 5vw 0; overflow: hidden;}
+                .container {width: 100%;}
                 .subcontainer {width: 100%; margin: auto;}
                 .slider-wrapper {width: 100%; position: relative; align-items: center; height: 23vw; overflow: hidden;}
                 .controller {width: 100%; position: absolute; z-index: 3; top: 19vw;}
@@ -127,7 +125,12 @@
                     .fa-headphones {position: absolute; left: 50%; transform: translate(-50%,-50%); top: 50%; transition: 0.5s; opacity: 0;
                                      font-size: 3vw; color: rgba(145, 177, 204, 1); padding: 0; border: 0; margin: 0; z-index: 4;} 
             
-            
+            .pod_recs {font-family: "Raleway", sans-serif;}
+                .podpods {display: flex; flex-direction: column;}  
+                    .podpod {line-height: 1.5; position: relative; height: 10vw;}
+                        .podpodrank {position: absolute; top: 50%; transform: translate(0,-50%); left: 10vw; font-size: 1.5vw; border-radius: 50%; text-align: right;}
+                        .podpodimg {position: absolute; top: 2vw; left: 10vw; height: 8vw; width: 8vw;}
+                        .podpodinfo {position: absolute; top: 50%; transform: translate(0,-50%);}
              
             
             
@@ -1106,28 +1109,30 @@
         
         <section class="pod_recs">
             <h2>Podcast Recommendations</h2>
-                <div class="podpod">
-                    <div class="podpodrank">#1</div>
-                    <img class="podpodimg" src="podcasts/StraightWhiteAmericanJesus.jpg">
-                    <div class="podpodinfo">
-                        <div class="podpodname">Straight White American Jesus</div>
-                        <div class="podpoddescript">Two ex-evangelical professors talk through every facet of White Christian Nationalism. Spiritual abuse, purity culture, cult language. Book recommenations and expert guests.</div>
+                <div class="podpods">
+                    <div class="podpod">
+                        <div class="podpodrank">#1</div>
+                        <img class="podpodimg" src="podcasts/StraightWhiteAmericanJesus.jpg">
+                        <div class="podpodinfo">
+                            <div class="podpodname">Straight White American Jesus</div>
+                            <div class="podpoddescript">Two ex-evangelical professors talk through every facet of White Christian Nationalism. Spiritual abuse, purity culture, cult language. Book recommenations and expert guests.</div>
+                        </div>
                     </div>
-                </div>
-                 <div class="podpod">
-                    <div class="podpodrank">#2</div>
-                    <img class="podpodimg" src="podcasts/QanonAnonymous.jpg">
-                    <div class="podpodinfo">
-                        <div class="podpodname">Qanon Anonymous</div>
-                        <div class="podpoddescript">Three unlikely heroes have been tracking the Qanon conspiracy theory from its inception. They keep an eye on all the conspiracy theory peddlers, political connections, and the many rabbit holes of the Q movement.</div>
+                     <div class="podpod">
+                        <div class="podpodrank">#2</div>
+                        <img class="podpodimg" src="podcasts/QanonAnonymous.jpg">
+                        <div class="podpodinfo">
+                            <div class="podpodname">Qanon Anonymous</div>
+                            <div class="podpoddescript">Three unlikely heroes have been tracking the Qanon conspiracy theory from its inception. They keep an eye on all the conspiracy theory peddlers, political connections, and the many rabbit holes of the Q movement.</div>
+                        </div>
                     </div>
-                </div>
-                <div class="podpod">
-                    <div class="podpodrank">#3</div>
-                    <img class="podpodimg" src="podcasts/PodSaveAmerica.jpg">
-                    <div class="podpodinfo">
-                        <div class="podpodname">Pod Save America</div>
-                        <div class="podpoddescript">Commentary on current events and politics from some Obama-era White House speech writers.</div>
+                    <div class="podpod">
+                        <div class="podpodrank">#3</div>
+                        <img class="podpodimg" src="podcasts/PodSaveAmerica.jpg">
+                        <div class="podpodinfo">
+                            <div class="podpodname">Pod Save America</div>
+                            <div class="podpoddescript">Commentary on current events and politics from some Obama-era White House speech writers.</div>
+                        </div>
                     </div>
                 </div>
                 <ul class="podpodextras">
