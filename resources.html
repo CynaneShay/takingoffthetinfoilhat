@@ -128,9 +128,15 @@
             .pod_recs {font-family: "Raleway", sans-serif;}
                 .podpods {display: flex; flex-direction: column;}  
                     .podpod {line-height: 1.5; position: relative; height: 10vw;}
-                        .podpodrank {position: absolute; top: 50%; transform: translate(0,-50%); left: 10vw; font-size: 1.5vw; border-radius: 50%; text-align: right;}
-                        .podpodimg {position: absolute; top: 2vw; left: 10vw; height: 8vw; width: 8vw;}
-                        .podpodinfo {position: absolute; top: 50%; transform: translate(0,-50%);}
+                        .podpodrank {position: absolute; top: 50%; transform: translate(0,-50%); left: 10vw; font-size: 3vw; border-radius: 50%; text-align: right; 
+                                    color: white; background-color: rgba(145, 177, 204, 1); height: 10vw;}
+                        .podpoddiv {position: absolute; left: 15vw; height: 10vw; background-color: linear-gradient(to right, rgba(145, 177, 204, 1) 0%, rgba(145, 177, 204, .2) 100%); 
+                                    display: flex; flex-direction: row; justify-content: center; align-items: center;}
+                            .podpodimg {height: 8vw; width: 8vw;}
+                            .podpodinfo {display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: left;}
+                                .podpodname {font-size: 1.5vw; text-variant: small-caps;}
+                                .podpoddescript {font-size: 1.2vw;}
+                        .podpod i {position: absolute; right: 0; top: 50%;  transform: translate(0,-50%); color: black; font-size: 2vw;}
              
             
             
@@ -1110,30 +1116,39 @@
         <section class="pod_recs">
             <h2>Podcast Recommendations</h2>
                 <div class="podpods">
-                    <div class="podpod">
+                    <a class="podpod" href="">
                         <div class="podpodrank">#1</div>
-                        <img class="podpodimg" src="podcasts/StraightWhiteAmericanJesus.jpg">
-                        <div class="podpodinfo">
-                            <div class="podpodname">Straight White American Jesus</div>
-                            <div class="podpoddescript">Two ex-evangelical professors talk through every facet of White Christian Nationalism. Spiritual abuse, purity culture, cult language. Book recommenations and expert guests.</div>
+                        <div class="podpoddiv">
+                            <img class="podpodimg" src="podcasts/StraightWhiteAmericanJesus.jpg">
+                            <div class="podpodinfo">
+                                <div class="podpodname">Straight White American Jesus</div>
+                                <div class="podpoddescript">Two ex-evangelical professors talk through every facet of White Christian Nationalism. Spiritual abuse, purity culture, cult language. Book recommenations and expert guests.</div>
+                            </div>
                         </div>
-                    </div>
-                     <div class="podpod">
+                        <i class="fa-solid fa-headphones"></i>
+                     </a>
+                     <a class="podpod" href="">
                         <div class="podpodrank">#2</div>
-                        <img class="podpodimg" src="podcasts/QanonAnonymous.jpg">
-                        <div class="podpodinfo">
-                            <div class="podpodname">Qanon Anonymous</div>
-                            <div class="podpoddescript">Three unlikely heroes have been tracking the Qanon conspiracy theory from its inception. They keep an eye on all the conspiracy theory peddlers, political connections, and the many rabbit holes of the Q movement.</div>
+                        <div class="podpoddiv">
+                            <img class="podpodimg" src="podcasts/QanonAnonymous.jpg">
+                            <div class="podpodinfo">
+                                <div class="podpodname">Qanon Anonymous</div>
+                                <div class="podpoddescript">Three unlikely heroes have been tracking the Qanon conspiracy theory from its inception. They keep an eye on all the conspiracy theory peddlers, political connections, and the many rabbit holes of the Q movement.</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="podpod">
+                        <i class="fa-solid fa-headphones"></i> 
+                    </a>
+                    <a class="podpod" href="">
                         <div class="podpodrank">#3</div>
-                        <img class="podpodimg" src="podcasts/PodSaveAmerica.jpg">
-                        <div class="podpodinfo">
-                            <div class="podpodname">Pod Save America</div>
-                            <div class="podpoddescript">Commentary on current events and politics from some Obama-era White House speech writers.</div>
+                        <div class="podpoddiv">
+                            <img class="podpodimg" src="podcasts/PodSaveAmerica.jpg">
+                            <div class="podpodinfo">
+                                <div class="podpodname">Pod Save America</div>
+                                <div class="podpoddescript">Commentary on current events and politics from some Obama-era White House speech writers.</div>
+                            </div>
                         </div>
-                    </div>
+                        <i class="fa-solid fa-headphones"></i>
+                    </a>
                 </div>
                 <ul class="podpodextras">
                     <a href=""><li class="podpodextra">Parcast Cults</li><i class="fa-solid fa-headphones"></i></a>
