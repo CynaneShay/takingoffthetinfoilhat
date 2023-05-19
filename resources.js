@@ -9,6 +9,11 @@ const navContainer = document.querySelector(".nav-container");
         navContainer.classList.toggle("active");
     })
 
+const menuIconContainer = document.querySelector(".book_recs #buttonbox");
+const navContainer = document.querySelector(".book_recs");
+    menuIconContainer.addEventListener("click", () => {
+        navContainer.classList.toggle("dropdown");
+    })
 
 window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
