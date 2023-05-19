@@ -252,13 +252,21 @@
                 .readingintro span {font-weight: 600;}
             .readingintro a {text-decoration: none;}
             .book_recs {width: 100%; margin: 0; padding: 3vw 0; display: flex; flex-direction: column; justify-content: center;}
-                #buttonbox {display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 1.7vw; font-family: "Raleway", sans-serif; padding: 0 3vw 1vw 3vw; 
+                #buttonbox {display: flex; flex-direction: row; align-items: center; justify-content: space-around; font-size: 4.5vw; font-family: "Raleway", sans-serif; padding: 1vw; 
                             background-image: linear-gradient(to top right, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%); height: 180vh; width: 100%;}
-                    #buttonbox p {color: #ae8625; font-weight: 600;}
-                    .recbutton {margin: 1vw 0; padding: .5vw; background-color: rgba(255,255,255,.2); border-radius: 25px; text-align: center; color: white; letter-spacing: 1px;
-                                width: 100%; font-weight: 600; font-variant: small-caps; cursor: pointer; border: .2vw solid rgba(0,0,0,0);
-                                text-shadow: -1px -1px 0 #ae8625, 1px -1px 0 #ae8625, -1px 1px 0 #ae8625, 1px 1px 0 #ae8625;}
-                        .recbutton span {color: #F8F2C9; font-weight: 900;}
+                    #buttonbox p {padding: 1vw; background-color: rgba(255,255,255,.2); border-radius: 25px; text-align: center; color: white;
+                        font-weight: 600; font-variant: small-caps; text-shadow: -1px -1px 0 #ae8625, 1px -1px 0 #ae8625, -1px 1px 0 #ae8625, 1px 1px 0 #ae8625;
+                        border: solid .2vw white;}
+                    .recbutton {margin: 0; padding: 0; background-color: rgba(255,255,255,0); border-radius: 25px; text-align: center; color: #ae8625; letter-spacing: 1px;
+                                width: 100%; font-weight: 600; font-variant: small-caps; cursor: pointer; border: 0; text-shadow: 0; display: none;}
+                        .recbutton span {color: black; font-weight: 900;}
+                        .recbutton.act {display: block;}
+                        .recbutton:hover {border: 0; font-weight: bold;}
+                #buttonbox.dropdown {position: absolute; bottom: 0; height: 95vh; background-color: white; justify-content: center;}
+                    #buttonbox.dropdown p {background-color: rgba(255,255,255,0); color: #ae8625; text-shadow: none; border: solid 1vw #ae8625; font-size: 10vw;}
+                    #buttonbox.dropdown .recbutton {display: block; font-size: 8vw; padding: 1vw 0;}
+                    #buttonbox.dropdown .recbutton.act {border-bottom: 1vw solid black;}
+            
                 .bookbox {display: flex; flex-direction: row; flex-wrap: wrap; text-align: left; background-color: white; width: 100%; padding: 0 2vw; margin: 0; 
                             border-image: linear-gradient(to top left, #ae8625 0%, #f6edab 10%, #c1ad52 35%, #f3c57a 45%, #ae8625 60%, #f6edab 70%, #c1ad52 85%, #f3c57a 100%) 10;
                             border-width: 0.5vw; border-style: solid;}
@@ -283,8 +291,7 @@
                             .bookbutts i:hover {background-color: rgba(145, 177, 204, .8); font-weight: bold;}
                         .bookbox .tbr a {color: #B6B6B6;}
                         .show {display: flex;}
-                        .recbutton.act {border: solid .2vw white;}
-                        .recbutton:hover {border: solid .2vw white;}
+
            
            .sliderheader {background-color: rgba(145, 177, 204, 0.7); color: white; padding: 2vw 0; margin: 7vw 0 0 0;}
            #slider {height: 25vw; display: flex; justify-content: center; align-items: center; padding: 0; width: 100%;
@@ -442,7 +449,7 @@
              <br><br>
             These are the tools I found. They helped me immensely, and I hope they can help you.
          </p></div>
-         
+        
          <h2>Reading Recommendations</h2>
          <div class="readingintro"><p>These authors changed my life, so please support them however you can.<br>
             For the budget conscious, though, I recommend buying used copies from websites like <a href="https://www.thriftbooks.com/" target="_blank">ThriftBooks.com</a>
@@ -463,7 +470,7 @@
                  <div class="recbutton" onclick="filterSelection('hell')">LGBTQ+, Hell, and Clobber Verses</div>
                  <div class="recbutton" onclick="filterSelection('memoir')">Faith Journey Memoirs</div>
                  <div class="recbutton" onclick="filterSelection('tbr')">To Be Read</div>
-             </div>
+             </div>        
              <div class="bookbox">
                  <div class="book fav philtheo hell">
                      <a class="bookflex" href="http://www.takingoffthetinfoilhat.com/blog">
