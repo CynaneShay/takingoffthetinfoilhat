@@ -255,21 +255,22 @@
             .book_recs {width: 100%; margin: 0; padding: 3vw 0; display: flex; flex-direction: column; justify-content: center;}
                 #buttonbox {display: none;}
                 .mobilebuttonbox {display: flex; flex-direction: row; align-items: center; justify-content: space-around; font-size: 4.5vw; font-family: "Raleway", sans-serif; padding: 1vw; 
-                            background-image: linear-gradient(to top right, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%); height: 180vh; width: 100%;}
+                            background-image: linear-gradient(to top right, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%); height: auto; width: 100%;}
                     .mobilebuttonbox p {padding: 1vw; background-color: rgba(255,255,255,.2); border-radius: 25px; text-align: center; color: white;
                         font-weight: 600; font-variant: small-caps; text-shadow: -1px -1px 0 #ae8625, 1px -1px 0 #ae8625, -1px 1px 0 #ae8625, 1px 1px 0 #ae8625;
                         border: solid .2vw white;}
-                    .recbutton {margin: 0; padding: 0; background-color: rgba(255,255,255,0); border-radius: 25px; text-align: center; color: #ae8625; letter-spacing: 1px;
-                                width: 100%; font-weight: 600; font-variant: small-caps; cursor: pointer; border: 0; text-shadow: 0; display: none;}
+                    .mobilebuttonbox .recbutton {margin: 0; padding: 0; background-color: rgba(255,255,255,0); border-radius: 25px; text-align: center; color: #ae8625; letter-spacing: 1px;
+                                width: 100%; font-weight: 600; font-variant: small-caps; cursor: pointer; border: 0; text-shadow: none; display: none;}
                         .recbutton span {color: black; font-weight: 900;}
                         .recbutton.act {display: block;}
                         .recbutton:hover {border: 0; font-weight: bold;}
-                .mobilebuttonbox.dropdown {position: fixed; bottom: 0; height: 95vh; background-color: white; justify-content: center;}
+                .mobilebuttonbox.dropdown {position: fixed; bottom: 0; height: 95vh; background-image: none; background-color: white; justify-content: center; 
+                                    z-index: 999999; flex-direction: column;}
                     .mobilebuttonbox.dropdown p {background-color: rgba(255,255,255,0); color: #ae8625; text-shadow: none; border: solid 1vw #ae8625; font-size: 10vw;}
                     .mobilebuttonbox.dropdown .recbutton {display: block; font-size: 8vw; padding: 1vw 0;}
                     .mobilebuttonbox.dropdown .recbutton.act {border-bottom: 1vw solid black;}
             
-                .bookbox {display: flex; flex-direction: row; flex-wrap: wrap; text-align: left; background-color: white; width: 100%; padding: 0 2vw; margin: 0; 
+                .bookbox {display: flex; flex-direction: row; flex-wrap: wrap; text-align: left; background-color: white; width: 100%; padding: 0; margin: 0; 
                             border-image: linear-gradient(to top left, #ae8625 0%, #f6edab 10%, #c1ad52 35%, #f3c57a 45%, #ae8625 60%, #f6edab 70%, #c1ad52 85%, #f3c57a 100%) 10;
                             border-width: 0.5vw; border-style: solid;}
                     .book a {text-decoration: none; color: black;}
