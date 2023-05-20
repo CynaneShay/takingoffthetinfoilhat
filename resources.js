@@ -113,6 +113,15 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
+// Add active class to the current control button (highlight it)
+var btns = document.queryselector(".mobilebuttonbox .recbutton");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("mobact");
+    current[0].className = current[0].className.replace(" mobact", "");
+    this.className += " mobact";
+  });
+}
 
 let slider=tns({container: ".my-slider",
                "SlideBy": 1,
