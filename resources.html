@@ -258,7 +258,7 @@
                             background-image: linear-gradient(to top right, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%); height: auto; width: 90%; margin: 0 auto;
                              border-image: linear-gradient(to bottom left, #ae8625 0%, #f6edab 10%, #c1ad52 35%, #f3c57a 45%, #ae8625 60%, #f6edab 70%, #c1ad52 85%, #f3c57a 100%) 10;
                             border-width: 2vw; border-style: solid;}
-                    .mobilebuttonbox p {padding: 1vw; background-color: rgba(255,255,255,.2); border-radius: 25px; text-align: center; color: white;
+                    .mobilebuttonbox p {font-size: 5.5vw; padding: 1vw; background-color: rgba(255,255,255,.2); border-radius: 25px; text-align: center; color: white;
                         font-weight: 600; font-variant: small-caps; text-shadow: -1px -1px 0 #ae8625, 1px -1px 0 #ae8625, -1px 1px 0 #ae8625, 1px 1px 0 #ae8625;
                         border: solid .2vw white; margin: 0 0 0 5vw}
                     .mobilebuttonbox .mobilerecbutton {margin: 0; padding: 0; background-color: rgba(255,255,255,0); border-radius: 25px; text-align: center; color: #ae8625; letter-spacing: 1px;
@@ -326,17 +326,17 @@
             
             .pod_recs {font-family: "Raleway", sans-serif;}
                 .podpods {display: flex; flex-direction: column;}  
-                    .podpod {line-height: 1.5; position: relative; height: 40vw; margin: 5vw 0; background-image: linear-gradient(to left, rgba(1,1,1,0) 70%, rgba(145, 177, 204, .1) 70.1%, rgba(145, 177, 204, .3) 100%);
+                    .podpod {line-height: 1.5; position: relative; height: 40vw; margin: 5vw 0; background-image: linear-gradient(to right, rgba(1,1,1,.3), rgba(145, 177, 204, 0) 25%, rgba(145, 177, 204, 1) 25.1%, rgba(145, 177, 204, 1) 45%, rgba(145, 177, 204, .1) 100%,);
                                 text-decoration: none; color: black;}
                         .podpodrank {position: absolute; top: 50%; transform: translate(0,-50%); left: 5vw; font-size: 18vw; border-radius: 50%; text-align: center; font-variant: italic; 
                                     color: white; background-color: rgba(145, 177, 204, 1); height: 40vw; width: 40vw; align-items: center; font-weight: 800; z-index: 2;}
-                        .podpoddiv {position: absolute; left: 25vw; height: 40vw; background-image: linear-gradient(to right, rgba(145, 177, 204, 1) 0%, rgba(145, 177, 204, 1) 25%, rgba(145, 177, 204, .3));
-                                    display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 1;}
+                        .podpoddiv {position: absolute; left: 25vw; height: 40vw; background-image: none;
+                                    display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 3;}
                             .podpodimg {height: 20vw; width: 20vw; padding: 0 0 0 10vw; z-index: 3; margin: 0 auto;}
                             .podpodinfo {display: flex; flex-direction: column; justify-content: center; align-items: start; text-align: left; width: 50vw; padding: 0 0 0 10vw; z-index: 3;}
                                 .podpodname {font-size: 5vw; font-variant: small-caps; text-align: center; font-weight: 600;}
                                 .podpoddescript {display: none; font-size: 4vw; text-align: left;}
-                        .podpodbutt {background-image: linear-gradient(to right, rgba(145, 177, 204, .3), rgba(145, 177, 204, .2)); border: 0; margin: 0; padding: 0; height: 40vw; width: 20vw;
+                        .podpodbutt {background-image: none; border: 0; margin: 0; padding: 0; height: 40vw; width: 20vw;
                                     display: flex; justify-content: center; align-items: center; position: absolute; right: 0;}
                         .podpodbutt .fa-headphones {color: white; font-size: 10vw; border-radius: 50%; border: solid .2vw white; padding: 3vw; z-index: 4;}
                 .podpodblock {background-color: rgba(145, 177, 204, 0.1); display: flex; flex-direction: column; justify-content: center; align-items: center;}
