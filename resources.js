@@ -9,9 +9,10 @@ const navContainer = document.querySelector(".nav-container");
         navContainer.classList.toggle("active");
     })
 
-const bookmenuIconContainer = document.querySelector(".book_recs .mobilebuttonbox");
+const bookmenuIconContainer = document.querySelector(".mobilebuttonbox p");
+const booknavContainer = document.querySelector(".mobilebuttonbox");
     bookmenuIconContainer.addEventListener("click", () => {
-        bookmenuIconContainer.classList.toggle("dropdown");
+        booknavContainer.classList.toggle("dropdown");
     })
 
 window.onscroll = function() {scrollFunction()};
