@@ -245,32 +245,33 @@
                 padding: 4vw 0; }
             .webintro {font-family: "Raleway", sans-serif; font-size: 4.5vw; text-align: center; line-height: 1.5; 
                         margin: 0; padding: 0; border: 0; width: 100%; background-image: linear-gradient(#FFFDEF, white);}
-                .webintro p {width: 80%; margin: 0 auto; padding: 0; border: 0;}
+                .webintro p {width: 70%; margin: 0 auto; padding: 0; border: 0;}
                 .webintro span {font-weight: 600;}
             .readingintro {font-family: "Raleway", sans-serif; font-size: 4.5vw; text-align: center; line-height: 1.5; 
                             margin: 0; padding: 0; border: 0; width: 100%;}
-                .readingintro p {width: 80%; margin: 0 auto; padding: 0; border: 0;}
+                .readingintro p {width: 70%; margin: 0 auto; padding: 0; border: 0;}
                 .readingintro span {font-weight: 600;}
             .readingintro a {text-decoration: none;}
             .book_recs {width: 100%; margin: 0; padding: 3vw 0; display: flex; flex-direction: column; justify-content: center;}
                 #buttonbox {display: none;}
-                .mobilebuttonbox {display: flex; flex-direction: row; align-items: center; justify-content: space-around; font-size: 4.5vw; font-family: "Raleway", sans-serif; padding: 1vw; 
-                            background-image: linear-gradient(to top right, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%); height: auto; width: 100%;}
+                .mobilebuttonbox {display: flex; flex-direction: row; align-items: center; justify-content: space-around; font-size: 4.5vw; font-family: "Raleway", sans-serif; padding: 3vw 0; 
+                            background-image: linear-gradient(to top right, #ae8625 0%, #f6edab 20%, #c1ad52 70%, #f3c57a 100%); height: auto; width: 90%; margin: 0 auto;}
                     .mobilebuttonbox p {padding: 1vw; background-color: rgba(255,255,255,.2); border-radius: 25px; text-align: center; color: white;
                         font-weight: 600; font-variant: small-caps; text-shadow: -1px -1px 0 #ae8625, 1px -1px 0 #ae8625, -1px 1px 0 #ae8625, 1px 1px 0 #ae8625;
-                        border: solid .2vw white; margin: 0 0 0 3vw}
+                        border: solid .2vw white; margin: 0 0 0 5vw}
                     .mobilebuttonbox .recbutton {margin: 0; padding: 0; background-color: rgba(255,255,255,0); border-radius: 25px; text-align: center; color: #ae8625; letter-spacing: 1px;
                                 width: 100%; font-weight: 600; font-variant: small-caps; cursor: pointer; border: 0; text-shadow: none; display: none;}
                         .recbutton span {color: black; font-weight: 900;}
-                        .recbutton.act {display: block;}
+                        .recbutton.mobact {display: block;}
                         .recbutton:hover {border: 0; font-weight: bold;}
-                .mobilebuttonbox.dropdown {position: fixed; bottom: 0; height: 95vh; background-image: none; background-color: #FFFDEF; justify-content: center; 
+                .mobilebuttonbox.dropdown {position: fixed; bottom: 0; height: 95vh; background-image: none; background-color: #FFFCE6; justify-content: center; 
                                     z-index: 999999; flex-direction: column; border-radius: 10px;}
-                    .mobilebuttonbox.dropdown p {background-color: rgba(255,255,255,0); color: #ae8625; text-shadow: none; border: solid 1vw #ae8625; font-size: 8vw;}
-                    .mobilebuttonbox.dropdown .recbutton {display: block; font-size: 4vw; padding: 3vw 0;}
-                    .mobilebuttonbox.dropdown .recbutton.act {border-bottom: 1vw solid black;}
+                    .mobilebuttonbox.dropdown p {background-color: white; color: #ae8625; text-shadow: none; border: solid 1vw #ae8625; font-size: 8vw; 
+                                    margin: 0 0 3vw 0; padding: 2vw;}
+                    .mobilebuttonbox.dropdown .recbutton {display: block; font-size: 4vw; padding: 1vw 0; margin: 3vw;}
+                    .mobilebuttonbox.dropdown .recbutton.mobact {border-bottom: 1vw solid black;}
             
-                .bookbox {display: flex; flex-direction: row; flex-wrap: wrap; text-align: left; background-color: white; width: 100%; padding: 0; margin: 0; 
+                .bookbox {display: flex; flex-direction: row; flex-wrap: wrap; text-align: left; background-color: white; width: 90%; padding: 0; margin: 0 auto; 
                             border-image: linear-gradient(to top left, #ae8625 0%, #f6edab 10%, #c1ad52 35%, #f3c57a 45%, #ae8625 60%, #f6edab 70%, #c1ad52 85%, #f3c57a 100%) 10;
                             border-width: 2vw; border-style: solid;}
                     .book a {text-decoration: none; color: black;}
@@ -469,8 +470,8 @@
                  <div class="recbutton" onclick="filterSelection('tbr')">To Be Read</div>
              </div>        
              <div class="mobilebuttonbox">
-                 <p>Filters:</p>
-                 <div class="recbutton act" onclick="filterSelection('fav')">Cynane's Top Picks</div>
+                 <p>Filter:</p>
+                 <div class="recbutton mobact" onclick="filterSelection('fav')">Cynane's Top Picks</div>
                  <div class="recbutton" onclick="filterSelection('all')">All</div>
                  <div class="recbutton" onclick="filterSelection('whitecn')"><span>White</span> Evangelical Nationalism</div>
                  <div class="recbutton" onclick="filterSelection('wchristiann')">White <span>Evangelical</span> Nationalism</div>
