@@ -263,15 +263,15 @@
                         border: solid .2vw white; margin: 0 0 0 5vw}
                     .mobilebuttonbox .recbutton {margin: 0; padding: 0; background-color: rgba(255,255,255,0); border-radius: 25px; text-align: center; color: #ae8625; letter-spacing: 1px;
                                 width: 100%; font-weight: 600; font-variant: small-caps; cursor: pointer; border: 0; text-shadow: none; display: none;}
-                        .recbutton span {color: black; font-weight: 900;}
-                        .recbutton.mobact {display: block;}
-                        .recbutton:hover {border: 0; font-weight: bold;}
+                        .mobilerecbutton span {color: black; font-weight: 900;}
+                        .mobilerecbutton.mobact {display: block;}
+                        .mobilerecbutton:hover {border: 0; font-weight: bold;}
                 .mobilebuttonbox.dropdown {position: fixed; bottom: 0; height: 95vh; background-image: none; background-color: #FFFCE6; justify-content: center; 
                                     z-index: 999999; flex-direction: column; border-radius: 10px;}
                     .mobilebuttonbox.dropdown p {background-color: white; color: #ae8625; text-shadow: none; border: solid 1vw #ae8625; font-size: 8vw; 
                                     margin: 0 0 3vw 0; padding: 2vw;}
-                    .mobilebuttonbox.dropdown .recbutton {display: block; font-size: 4vw; padding: 1vw 0; margin: 3vw;}
-                    .mobilebuttonbox.dropdown .recbutton.mobact {border-bottom: 1vw solid black;}
+                    .mobilebuttonbox.dropdown .mobilerecbutton {display: block; font-size: 4vw; padding: 1vw 0; margin: 3vw;}
+                    .mobilebuttonbox.dropdown .mobilerecbutton.mobact {border-bottom: .5vw solid #ae8625;}
             
                 .bookbox {display: flex; flex-direction: row; flex-wrap: wrap; text-align: left; background-color: white; width: 90%; padding: 0; margin: 0 auto; 
                             border-image: linear-gradient(to top left, #ae8625 0%, #f6edab 10%, #c1ad52 35%, #f3c57a 45%, #ae8625 60%, #f6edab 70%, #c1ad52 85%, #f3c57a 100%) 10;
@@ -443,7 +443,7 @@
         
         <h1>EXvangelical Resources</h1> 
          <div class="webintro"><p>When I "<span>deconstructed</span>" from White Christian Nationalism, I did not have the language to describe it. 
-            I did not know there were resources or others like me. <br><br><span>I needed information.</span>
+            I did not know there were resources or others like me.<br><span>I needed information.</span><br>
             I had to reapproach history, theology, politics, psychology, and philosophy. I had to reframe evangelical issues like
             Hell, feminism, LGBTQ+ affirmation, and purity culture. I needed to dig out what had been a lie and rebuild an entire worldview from the ground up.
              <br><br>
@@ -451,7 +451,7 @@
          </p></div>
         
          <h2>Reading Recommendations</h2>
-         <div class="readingintro"><p>These authors changed my life, so please support them however you can.<br><br>
+         <div class="readingintro"><p>Please support these authors however you can.<br>
             For the budget conscious, though, I recommend buying used copies from websites like <a href="https://www.thriftbooks.com/" target="_blank">ThriftBooks.com</a>
             or even Amazon. <br><br>Hoopla also offers most of these titles as <span>free</span> audiobooks or ebooks, just connect your library card!
          </p></div>
@@ -473,18 +473,18 @@
              </div>        
              <div class="mobilebuttonbox">
                  <p>Filter:</p>
-                 <div class="recbutton mobact" onclick="filterSelection('fav')">Cynane's Top Picks</div>
-                 <div class="recbutton" onclick="filterSelection('all')">All</div>
-                 <div class="recbutton" onclick="filterSelection('whitecn')"><span>White</span> Evangelical Nationalism</div>
-                 <div class="recbutton" onclick="filterSelection('wchristiann')">White <span>Evangelical</span> Nationalism</div>
-                 <div class="recbutton" onclick="filterSelection('wcnationalism')">White Evangelical <span>Nationalism</span></div>
-                 <div class="recbutton" onclick="filterSelection('purityculture')">Purity Culture</div>
-                 <div class="recbutton" onclick="filterSelection('conspiracy')">Conspiracy Theories</div>
-                 <div class="recbutton" onclick="filterSelection('cults')">Cult Psychology</div>
-                 <div class="recbutton" onclick="filterSelection('philtheo')">Philosphy-Theology</div>
-                 <div class="recbutton" onclick="filterSelection('hell')">LGBTQ+, Hell, and Clobber Verses</div>
-                 <div class="recbutton" onclick="filterSelection('memoir')">Faith Journey Memoirs</div>
-                 <div class="recbutton" onclick="filterSelection('tbr')">To Be Read</div>
+                 <div class="mobilerecbutton mobact" onclick="filterSelection('fav')">Cynane's Top Picks</div>
+                 <div class="mobilerecbutton" onclick="filterSelection('all')">All</div>
+                 <div class="mobilerecbutton" onclick="filterSelection('whitecn')"><span>White</span> Evangelical Nationalism</div>
+                 <div class="mobilerecbutton" onclick="filterSelection('wchristiann')">White <span>Evangelical</span> Nationalism</div>
+                 <div class="mobilerecbutton" onclick="filterSelection('wcnationalism')">White Evangelical <span>Nationalism</span></div>
+                 <div class="mobilerecbutton" onclick="filterSelection('purityculture')">Purity Culture</div>
+                 <div class="mobilerecbutton" onclick="filterSelection('conspiracy')">Conspiracy Theories</div>
+                 <div class="mobilerecbutton" onclick="filterSelection('cults')">Cult Psychology</div>
+                 <div class="mobilerecbutton" onclick="filterSelection('philtheo')">Philosphy-Theology</div>
+                 <div class="mobilerecbutton" onclick="filterSelection('hell')">LGBTQ+, Hell, and Clobber Verses</div>
+                 <div class="mobilerecbutton" onclick="filterSelection('memoir')">Faith Journey Memoirs</div>
+                 <div class="mobilerecbutton" onclick="filterSelection('tbr')">To Be Read</div>
              </div>     
              <div class="bookbox">
                  <div class="book fav philtheo hell">
