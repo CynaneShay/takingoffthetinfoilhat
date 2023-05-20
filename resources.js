@@ -114,7 +114,7 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 // Add active class to the current control button (highlight it)
-var btns = document.queryselector(".mobilebuttonbox .recbutton");
+var btns = document.getElementsByClassName("mobilerecbutton");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
     var current = document.getElementsByClassName("mobact");
